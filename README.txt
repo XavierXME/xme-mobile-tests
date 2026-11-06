@@ -1,0 +1,1 @@
+Q2 refaite de zéro, responsive natif, sans audio. Téléverser q2.html et logo.png au même niveau sur GitHub Pages. index.html est facultatif. URL /q2.html?v=14. Toucher la capsule pour pause/reprise; curseur pour avancer; bouton agrandir sous la capsule.
