@@ -1,1 +1,0 @@
-Q2 V11 responsive natif. Ajouter q2.html et q2-audio-v10.mp3 à la racine de GitHub Pages. URL : /q2.html?v=11. Aucun iframe/player.html requis. Le bouton Agrandir active une vue étendue; Safari iPhone ne garantit pas le plein écran ni le verrouillage paysage.
