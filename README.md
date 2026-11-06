@@ -1,15 +1,10 @@
-# X&ME Mobile Tests
+# X&ME Q2 - Test Safari mobile V8
 
-Tests de lecture HTML/JavaScript et capsule Q2 sur Safari iPhone.
+- `q2.html` : capsule Q2 V5 (5 voix ElevenLabs et musique intégrées), avec ajustements mobiles V8.
+- `q2-originale-v5.html` : copie inchangée de la Q2 V5 de référence.
 
-- `/` : test minimal JavaScript (cercle doré)
-- `/q2.html` : capsule Q2 V5 validée sur ordinateur, sans modification
+Dans GitHub, déposer les fichiers HTML à la racine du dépôt `xme-mobile-tests`.
+L'adresse du test est `https://PSEUDO.github.io/xme-mobile-tests/q2.html`.
 
-## Mise en ligne
-1. Créer un dépôt public `xme-mobile-tests` sur GitHub (ne pas publier de données privées).
-2. Ajouter les trois fichiers à la racine de la branche `main`.
-3. Settings > Pages > Build and deployment : Deploy from a branch, `main`, `/(root)`.
-4. Ouvrir `https://<utilisateur>.github.io/xme-mobile-tests/` sur Safari iPhone.
-5. Puis ouvrir `https://<utilisateur>.github.io/xme-mobile-tests/q2.html`.
-
-Note : GitHub Pages est un site public. Le HTML Q2 embarque les médias et peut être consulté par quiconque possède le lien.
+Tester sur iPhone Safari : lecture, voix, musique, pause/reprise, navigation, rotation manuelle en paysage, lisibilité.
+Le verrouillage automatique du paysage n'est pas garanti sur Safari iPhone. Le bouton plein écran est un test de capacité, pas une promesse.
