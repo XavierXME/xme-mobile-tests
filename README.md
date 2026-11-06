@@ -1,13 +1,11 @@
-# X&ME Q2 V9 : test Safari iPhone
+# Q2 V10, test responsive Safari
 
-Mettre **les deux fichiers** à la racine du dépôt GitHub Pages :
-- `q2.html` (capsule, 5 scènes)
-- `q2-bande-son-continue.mp3` (les cinq voix off + musique continue)
+Déposer les quatre fichiers `index.html`, `q2.html`, `player.html`, `q2-audio-v10.mp3` à la racine du dépôt `xme-mobile-tests`.
 
-Ouvrir `https://VOTRE-PSEUDO.github.io/xme-mobile-tests/q2.html` dans Safari.
+Ouvrir `https://VOTRE-PSEUDO.github.io/xme-mobile-tests/q2.html?v=10` sur Safari iPhone.
 
-**Corrections V9** : une seule piste audio continue, pilotage des scènes par l'horloge audio, mise à l'échelle uniforme de la scène 16:9 (aucune déformation), adaptation au paysage et au portrait.
+La composition originale est rendue dans un cadre 1240 × 755 et mise à l’échelle sans déformation. La lecture se lance au toucher sur la capsule; un second toucher met en pause ou reprend. La barre de progression est sous la scène. Le bouton Agrandir active une vue étendue; Safari iOS ne garantit pas le verrouillage de l’orientation.
 
-**Limite Safari iOS** : le navigateur ne garantit pas le basculement automatique en paysage ni le plein écran HTML natif. Il faut tourner physiquement l'iPhone. Pour obtenir une rotation forcée, il faudrait envisager une lecture vidéo native MP4 en plein écran, à évaluer séparément.
+Les cinq voix et la musique sont mixées dans un seul MP3, sans coupure aux transitions.
 
-**Important** : ne pas envoyer le ZIP tel quel dans GitHub, le décompresser et transférer les deux fichiers. Ce prototype est destiné au test, pas à la mise en production.
+Attention: une adaptation proportionnelle 16:9 en portrait rend les textes plus petits. Cette V10 valide la continuité audio et le rendu sans déformation; un agencement portrait dédié reste une étape distincte si la lisibilité est insuffisante.

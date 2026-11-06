@@ -1,1 +1,24 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>X&ME · Diagnostic lecture iPhone</title><style>body{font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;background:#f5f5f3;color:#303841;margin:0;padding:24px}main{max-width:540px;margin:auto}.box{border:2px solid #c49c48;border-radius:18px;background:white;padding:22px;text-align:center}button{background:#303841;color:white;border:0;border-radius:12px;padding:16px 25px;font-size:19px;cursor:pointer}.ball{width:48px;height:48px;border-radius:50%;background:#c49c48;margin:30px auto;transform:translateX(0)}.ball.go{animation:move 2s ease-in-out infinite alternate}@keyframes move{from{transform:translateX(-85px)}to{transform:translateX(85px)}}#status{font-size:18px;font-weight:700;min-height:2em}small{display:block;margin-top:15px;color:#666}</style></head><body><main><h2>Diagnostic de lecture X&ME sur iPhone</h2><div class="box"><p id="loaded">HTML affiché : oui</p><p id="status">En attente du clic</p><div id="ball" class="ball"></div><button type="button" id="play">▶ Lancer le test</button><small>Le cercle doré doit se déplacer après le clic. Aucun son n'est nécessaire.</small></div><p>Si le bouton ne réagit pas, le problème se situe avant la lecture audio ou l'animation Q2. Si le cercle bouge, le JavaScript fonctionne et nous pourrons tester séparément les médias.</p></main><script>document.getElementById('loaded').textContent='JavaScript chargé : oui';document.getElementById('play').addEventListener('click',function(){var b=document.getElementById('ball');var active=b.classList.toggle('go');document.getElementById('status').textContent=active?'CLIC REÇU · ANIMATION EN COURS':'ANIMATION ARRÊTÉE';this.textContent=active?'Ⅱ Arrêter le test':'▶ Relancer le test';});</script></body></html>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>X&ME · Q2 · Test mobile V10</title>
+<style>
+:root{color-scheme:dark;--gold:#c49c48}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#20262c;color:#fff;font-family:Arial,sans-serif}body{padding:clamp(8px,2vw,22px)}
+main{width:min(1240px,100%);margin:auto}.viewport{position:relative;width:100%;overflow:hidden;touch-action:pan-y}.viewport iframe{position:absolute;top:0;left:0;width:1240px;height:755px;border:0;transform-origin:top left;display:block}
+.actions{display:flex;align-items:center;justify-content:center;gap:12px;margin:12px auto;flex-wrap:wrap}.actions button{padding:10px 16px;border-radius:12px;border:1px solid var(--gold);background:#303841;color:#fff;font-size:14px;font-weight:bold;cursor:pointer}.note{font-size:12px;color:#d6d6d6;text-align:center;line-height:1.5}
+#close{display:none}body.theater{padding:0;overflow:hidden}body.theater main{position:fixed;inset:0;z-index:20;width:100vw;height:100dvh;max-width:none;background:#20262c;display:flex;align-items:center;justify-content:center}body.theater .viewport{flex:none}body.theater .actions{position:fixed;right:12px;top:8px;z-index:50;margin:0}body.theater #expand,body.theater .note{display:none}body.theater #close{display:block;background:#303841f2}
+@media (orientation:landscape){body{padding:4px 8px}.actions{margin:4px auto}.actions button{padding:6px 12px}.note{display:none}}
+</style></head><body><main id="main"><div class="viewport" id="viewport"><iframe id="player" src="player.html" title="Capsule Q2 X&ME" allow="autoplay; fullscreen" scrolling="no"></iframe></div><div class="actions"><button id="expand" type="button">⛶ Agrandir / Paysage</button><button id="close" type="button">✕ Réduire</button></div><p class="note">En portrait, la capsule conserve ses proportions. Pour la voir plus grande, passe en paysage ou utilise le bouton Agrandir.</p></main>
+<script>
+(function(){'use strict';var BASEW=1240,BASEH=755,main=document.getElementById('main'),host=document.getElementById('viewport'),iframe=document.getElementById('player'),expand=document.getElementById('expand'),close=document.getElementById('close');
+var theater=false;
+function fit(){var landscape=innerWidth>innerHeight;
+ var width=theater?innerWidth:Math.min(main.clientWidth,1240);
+ var height=theater?innerHeight:Math.max(180,innerHeight-(landscape?65:115));
+ var scale=Math.min(width/BASEW,height/BASEH);
+ host.style.width=(BASEW*scale)+'px';host.style.height=(BASEH*scale)+'px';iframe.style.transform='scale('+scale+')';
+ if(!theater){host.style.margin='0 auto';}else{host.style.margin='auto';}
+}
+function setTheater(v){theater=v;document.body.classList.toggle('theater',v);fit()}
+expand.addEventListener('click',function(){setTheater(true);if(screen.orientation&&screen.orientation.lock){screen.orientation.lock('landscape').catch(function(){})}});
+close.addEventListener('click',function(){setTheater(false)});
+window.addEventListener('resize',fit);window.addEventListener('orientationchange',function(){setTimeout(fit,150)});fit();
+})();
+</script></body></html>
