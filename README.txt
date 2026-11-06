@@ -1,1 +1,0 @@
-V12 correctif : CSS fixe 1240px retiré, blocs visibles et animations réactivées. Remplacer q2.html dans GitHub. URL /q2.html?v=12. Le MP3 est inchangé.
