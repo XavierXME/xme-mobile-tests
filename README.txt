@@ -1,1 +1,0 @@
-Q2 V17 : remplacer uniquement q2.html dans le dépôt GitHub Pages. Images XO et logo intégrées, aucun autre fichier nécessaire. Sans voix off ni musique. Tester /q2.html?v=17.
