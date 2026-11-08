@@ -1,1 +1,0 @@
-V20 : ajouter q2-clair-test-v20.html au dépôt GitHub Pages. Musique et narration embarquées. La musique est réglée à 13 % du volume et se met en pause avec la narration.
