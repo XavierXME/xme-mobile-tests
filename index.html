@@ -1,0 +1,664 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>X&ME | Univers Entrepreneurs, V3</title><style>
+:root{--ink:#303841;--gold:#c49c48;--paper:#fff;--muted:#66717c}*{box-sizing:border-box}html{scroll-behavior:auto}body{margin:0;color:var(--ink);font-family:Carlito,Calibri,'Segoe UI',Arial,sans-serif;background:#f8f9fa}button,a{font:inherit}button{cursor:pointer}.hero{min-height:100svh;background:url("assets/fond-integre-1.png") center/cover no-repeat;position:relative}.top{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:13px clamp(18px,4vw,66px);gap:20px}.brand{display:flex;align-items:center;gap:18px;text-decoration:none;color:var(--ink)}.brand img{width:68px;height:68px;object-fit:contain}.slogan{font-size:clamp(15px,1.5vw,21px);font-weight:700;letter-spacing:.01em}.slogan em{color:var(--gold);font-style:normal}.menu-btn{border:1px solid #e1e4e8;background:#ffffffd9;border-radius:15px;padding:12px 16px;display:flex;align-items:center;gap:10px;font-weight:700;color:var(--ink);box-shadow:0 5px 20px #30384112}.hamb{font-size:22px}.intro{text-align:center;padding:10px 18px 0}.eyebrow{color:#9c792f;text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:800}.intro h1{font-size:clamp(32px,3.5vw,52px);margin:8px 0 5px}.intro p{font-size:clamp(16px,1.6vw,20px);margin:0;color:#5f6a74}.wheel{position:relative;width:min(1070px,95vw);height:610px;margin:12px auto 0}.hub{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);width:200px;height:200px;border-radius:50%;background:radial-gradient(circle at 32% 23%,#667481,#303841 58%,#202a33);box-shadow:inset 0 3px 4px #ffffff6b,0 17px 35px #30384146;border:5px solid #d2b577;display:flex;align-items:center;justify-content:center;flex-direction:column;z-index:2;color:white}.hub strong{font-size:37px;letter-spacing:-.04em}.hub strong b{color:#e8c778}.hub span{font-size:12px;letter-spacing:.15em}.bubble{position:absolute;width:235px;min-height:100px;padding:15px 19px;border:1px solid #ffffffa6;border-radius:26px;background:linear-gradient(145deg,#515e6b,#303841 60%,#25303b);box-shadow:inset 0 2px 2px #ffffff3c,0 12px 23px #30384128;color:#fff;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;transition:transform .3s,box-shadow .3s,background .3s;z-index:3}.bubble:nth-of-type(3n){background:linear-gradient(145deg,#e4c77f,#c49c48 60%,#aa8036)}.bubble .num{font-size:12px;letter-spacing:.2em;opacity:.85}.bubble .lbl{font-weight:700;font-size:17px;line-height:1.18}.bubble:hover,.bubble:focus-visible,.bubble.active{transform:translateY(-5px) scale(1.065);box-shadow:0 19px 38px #3038414d,0 0 0 4px #c49c4840;outline:none}.bubble.active{border:2px solid #f5d28c}.b1{top:0;left:50%;translate:-50% 0}.b2{top:105px;right:0}.b3{top:255px;right:0}.b4{bottom:25px;right:14%}.b5{bottom:25px;left:14%}.b6{top:255px;left:0}.b7{top:105px;left:0}.b8{bottom:0;left:50%;translate:-50% 0;display:none}.wheel:has(.b8){height:660px}.wheel .b4{bottom:5px;right:5%}.wheel .b5{bottom:5px;left:5%}.wheel .b8{display:flex;bottom:0;left:50%;translate:-50% 0}.wheel .b1{top:0}.wheel .b2{top:120px;right:2%}.wheel .b3{top:310px;right:2%}.wheel .b4{bottom:15px;right:17%}.wheel .b5{bottom:15px;left:17%}.wheel .b6{top:310px;left:2%}.wheel .b7{top:120px;left:2%}.wheel .b8{bottom:0;top:auto;left:50%;translate:-50% 0;transform:translateY(0);display:none}
+/* 8 distinct points on a spacious ellipse */.wheel{height:710px}.wheel .b1{top:0;left:50%}.wheel .b2{top:85px;right:5%}.wheel .b3{top:270px;right:0}.wheel .b4{bottom:85px;right:5%}.wheel .b5{bottom:0;left:50%;right:auto;translate:-50% 0}.wheel .b6{bottom:85px;top:auto;left:5%}.wheel .b7{top:270px;left:0}.wheel .b8{top:85px;bottom:auto;left:5%;translate:0 0;display:flex}.wheel .hub{top:49%}.wheel .b8:hover,.wheel .b8.active{transform:translateY(-5px) scale(1.065)}.hint{text-align:center;font-size:14px;color:#5f6974;padding:0 20px 36px}.detail{max-width:1180px;margin:0 auto 80px;padding:0 22px;scroll-margin-top:24px}.panel{border:1px solid #dfe3e6;border-radius:30px;background:#ffffffed;box-shadow:0 24px 70px #3038411a;overflow:hidden;animation:enter .45s ease}.panel-head{padding:26px 36px;background:linear-gradient(110deg,#303841,#52606c);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:18px}.panel-head h2{font-size:clamp(22px,2.5vw,32px);margin:5px 0}.panel-head small{color:#e3c889;letter-spacing:.14em;font-weight:700}.close{background:#ffffff20;color:white;border:1px solid #ffffff6a;border-radius:14px;padding:10px 15px}.panel-body{padding:32px 36px}.story-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:26px}.story h3{margin:0 0 15px;font-size:23px}.story p{line-height:1.6;font-size:16px;color:#47525d}.constats{background:#f6f7f8;border-radius:18px;padding:20px 24px}.constats h4{margin:0 0 12px}.constats li{margin:0 0 9px;line-height:1.4}.video{border-radius:22px;background:linear-gradient(145deg,#495866,#27323e);color:#fff;min-height:220px;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;padding:24px;gap:12px}.play{font-size:40px;color:#e2bd6d}.video span{font-size:14px;color:#dce0e3}.gain{margin:22px 0;background:#fcf7ea;border:1px solid #e9d4a2;border-left:6px solid var(--gold);padding:19px 23px;border-radius:16px}.gain small{color:#947128;text-transform:uppercase;letter-spacing:.1em;font-weight:800}.gain strong{display:block;font-size:21px;margin:7px 0}.gain p{margin:0;color:#6b665d;font-size:14px}.actions{text-align:center}.cta{background:linear-gradient(135deg,#d6b46c,#b68a38);border:0;border-radius:16px;padding:16px 28px;color:#fff;font-weight:800;box-shadow:0 8px 18px #a67d3040}.solutions{margin-top:24px;border-top:1px solid #e2e5e8;padding-top:26px;animation:enter .45s ease}.solutions h3{font-size:26px;margin:0 0 8px}.solutions>p{color:#66717c;margin:0 0 22px}.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.mode{border:1px solid #d8dce0;border-radius:20px;overflow:hidden;background:#f8f9fa}.mode button{width:100%;border:0;background:transparent;padding:19px;text-align:left;color:var(--ink);font-size:18px;font-weight:800}.mode button span{float:right;color:#b58c42}.mode-content{padding:0 19px 20px;line-height:1.55;color:#4d5a65;font-size:15px}.mode-content p{margin:8px 0}.next{margin-top:24px;border-radius:16px;padding:18px;background:#f3f4f6;font-size:14px;color:#66717c}.overlay{position:fixed;inset:0;background:#1a2530a1;z-index:40;opacity:0;pointer-events:none;transition:opacity .25s}.overlay.open{opacity:1;pointer-events:auto}.drawer{position:fixed;right:0;top:0;bottom:0;width:min(400px,90vw);background:#fff;z-index:41;transform:translateX(100%);transition:transform .3s;overflow:auto;padding:24px;box-shadow:-12px 0 40px #30384130}.drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e7ea;padding-bottom:14px}.drawer-head button{background:#f1f2f4;border:0;border-radius:10px;padding:9px 13px}.drawer h3{font-size:12px;color:#b48b40;letter-spacing:.15em;text-transform:uppercase;margin:28px 0 9px}.drawer a{display:block;padding:10px 0;color:var(--ink);text-decoration:none;border-bottom:1px solid #edf0f1}.drawer a:hover{color:#a67c2c}@keyframes enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}@media(max-width:950px){.wheel{height:auto;display:grid;grid-template-columns:repeat(2,1fr);gap:13px;padding:22px 10px 30px;width:min(650px,96vw)}.wheel .bubble{position:static;translate:none!important;width:100%;min-height:105px}.wheel .hub{position:static;transform:none;grid-column:1/-1;grid-row:1;width:155px;height:155px;margin:auto}.wheel .hub strong{font-size:29px}.wheel .b8{display:flex}.story-grid{grid-template-columns:1fr}.modes{grid-template-columns:1fr}.panel-head,.panel-body{padding:23px}.intro h1{font-size:33px}}@media(max-width:520px){.brand img{width:49px;height:49px}.slogan{font-size:13px}.top{padding:12px}.menu-btn{font-size:0;gap:0}.hamb{font-size:24px}.wheel{gap:9px}.bubble{border-radius:18px!important;padding:12px!important}.bubble .lbl{font-size:14px}.bubble .num{font-size:11px}.panel-head h2{font-size:21px}.panel-body{padding:18px}.constats{padding:17px}.detail{padding:0 10px}.gain strong{font-size:18px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* V2 : même en-tête translucide et navigation que l'univers PME */
+.xme-header{height:90px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;position:relative!important;z-index:40!important;padding:12px clamp(20px,5vw,70px)!important;background:#ffffffda!important;backdrop-filter:blur(10px);box-shadow:0 3px 20px #30384114!important}
+.xme-header-brand{display:flex;align-items:center;gap:18px;text-decoration:none;color:#303841;font-size:clamp(15px,1.45vw,22px);font-weight:750;letter-spacing:.01em}.xme-header-brand img{height:66px;width:66px;object-fit:contain}.xme-header-brand .slogan{font-size:inherit}.xme-menu-trigger{border:0;background:transparent;width:50px;height:50px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border-radius:50%;cursor:pointer}.xme-menu-trigger:hover{background:#edf0f3}.xme-menu-trigger i{width:24px;height:2px;background:#303841;transition:.2s}.xme-menu-trigger:hover i:nth-child(2){width:18px;background:#c49c48}
+.overlay{background:#17202bb8;backdrop-filter:blur(2px)}.drawer{background:#303841;color:white;width:min(420px,90vw);padding:28px 35px}.drawer-head{color:#c49c48;letter-spacing:.15em;border-bottom:1px solid #65717a}.drawer-head button{color:white;background:transparent}.drawer h3{color:#c49c48;border-top:1px solid #65717a;padding-top:19px}.drawer a{color:#f7f7f7;border-bottom:0;font-size:16px}.drawer a:hover{color:#e2bb69}.drawer a:focus-visible,.xme-menu-trigger:focus-visible{outline:3px solid #c49c48;outline-offset:3px}
+/* Roue compacte, huit cartes de taille identique, toutes visibles sans défilement initial */
+.hero{min-height:100svh;background-size:cover;background-position:center top}.intro{padding:14px 18px 0}.intro h1{font-size:clamp(30px,3vw,43px);margin:5px 0}.intro p{font-size:clamp(15px,1.3vw,18px)}
+.wheel,.wheel:has(.b8){height:clamp(470px,59vh,550px);width:min(1050px,94vw);margin:5px auto 0;display:block;position:relative;padding:0}
+.wheel .bubble{position:absolute;box-sizing:border-box;width:clamp(205px,23vw,248px);height:clamp(72px,9vh,85px);min-height:0;border-radius:22px;padding:11px 14px;display:flex;translate:none;transform:none;transition:transform .28s ease,box-shadow .28s ease;box-shadow:inset 0 2px 3px #ffffff80,inset 0 -7px 12px #00000017,0 11px 22px #30384131,0 4px 0 #30384114;border:1px solid #ffffffa3}
+.wheel .bubble .lbl{font-size:clamp(13px,1.15vw,16px);font-weight:750;line-height:1.18}.wheel .bubble .num{display:none}
+.wheel .b1{top:0;left:50%;right:auto;bottom:auto;translate:-50% 0;background:linear-gradient(145deg,#58636f,#303841 60%,#252d35);color:#fff}
+.wheel .b2{top:15%;right:1%;left:auto;bottom:auto;background:linear-gradient(145deg,#e8c982,#c49c48 58%,#a67e34);color:#fff}
+.wheel .b3{top:15%;left:1%;right:auto;bottom:auto;background:linear-gradient(145deg,#8291a0,#5b6b7c 58%,#405162);color:#fff}
+.wheel .b4{top:42%;right:0;left:auto;bottom:auto;background:linear-gradient(145deg,#f6f6f6,#e6e6e6 60%,#c9cdd0);color:#303841}
+.wheel .b5{top:42%;left:0;right:auto;bottom:auto;background:linear-gradient(145deg,#e8c982,#c49c48 58%,#a67e34);color:#fff}
+.wheel .b6{top:69%;right:1%;left:auto;bottom:auto;background:linear-gradient(145deg,#8291a0,#5b6b7c 58%,#405162);color:#fff}
+.wheel .b7{top:69%;left:1%;right:auto;bottom:auto;background:linear-gradient(145deg,#f6f6f6,#e6e6e6 60%,#c9cdd0);color:#303841}
+.wheel .b8{top:auto;bottom:0;left:50%;right:auto;translate:-50% 0;display:flex;background:linear-gradient(145deg,#58636f,#303841 60%,#252d35);color:#fff}
+.wheel .hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:clamp(135px,15vw,170px);height:clamp(135px,15vw,170px)}
+.wheel .bubble:hover,.wheel .bubble:focus-visible,.wheel .bubble.active,.wheel .b8:hover,.wheel .b8.active{transform:translateY(-5px) scale(1.06);box-shadow:inset 0 2px 3px #ffffff80,0 20px 32px #30384154,0 0 0 3px #c49c4855;z-index:4}
+.hint{padding:2px 12px 14px;margin:0}
+@media(max-width:700px){.xme-header{height:75px!important;padding:8px 15px!important}.xme-header-brand img{height:53px;width:53px}.xme-header-brand{gap:9px;font-size:15px}.wheel,.wheel:has(.b8){width:min(95vw,530px);height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px 0 20px;margin:10px auto}.wheel .hub{position:static;grid-column:1/-1;grid-row:1;transform:none;width:125px;height:125px;margin:auto}.wheel .hub strong{font-size:27px}.wheel .bubble,.wheel .b1,.wheel .b2,.wheel .b3,.wheel .b4,.wheel .b5,.wheel .b6,.wheel .b7,.wheel .b8{position:static;translate:none;width:100%;height:90px;min-height:90px;border-radius:18px;padding:9px}.wheel .bubble .lbl{font-size:clamp(12px,3.1vw,15px)}.intro{padding-top:12px}.intro h1{font-size:30px}.hint{padding-bottom:22px}}
+@media(max-width:380px){.wheel .bubble{height:104px;min-height:104px}.xme-header-brand .slogan{font-size:12px}}
+
+/* V3 : roue elliptique équilibrée, bulles agrandies et emphase éditoriale */
+@media (min-width:951px){
+ .intro{padding-top:5px}
+ .intro h1{margin:3px 0 2px;font-size:clamp(33px,3vw,46px)}
+ .intro p{font-size:clamp(15px,1.3vw,18px)}
+ .wheel,.wheel:has(.b8){width:min(1250px,96vw);height:560px;margin:9px auto 0}
+ .wheel .bubble{width:clamp(260px,22vw,310px);height:104px;min-height:104px;padding:14px 22px;border-radius:25px;translate:none;transform:none;}
+ .wheel .bubble .lbl{font-size:clamp(15px,1.17vw,17px);line-height:1.27;font-weight:450}
+ .wheel .bubble .lbl strong{font-weight:850}
+ .wheel .hub{top:50%;width:186px;height:186px}
+ .wheel .b1{top:0;left:50%;right:auto;bottom:auto;translate:-50% 0}
+ .wheel .b2{top:91px;right:3%;left:auto;bottom:auto}
+ .wheel .b3{top:239px;right:0;left:auto;bottom:auto}
+ .wheel .b4{top:388px;right:3%;left:auto;bottom:auto}
+ .wheel .b5{top:auto;bottom:0;left:50%;right:auto;translate:-50% 0}
+ .wheel .b6{top:388px;left:3%;right:auto;bottom:auto}
+ .wheel .b7{top:239px;left:0;right:auto;bottom:auto}
+ .wheel .b8{top:91px;left:3%;right:auto;bottom:auto;translate:none;display:flex}
+ .wheel .bubble:hover,.wheel .bubble:focus-visible,.wheel .bubble.active{transform:translateY(-5px) scale(1.045)}
+ .hint{padding-bottom:18px}
+}
+/* Quatre couleurs alternées avec reflets et contraste accessible */
+.wheel .bubble{background:linear-gradient(152deg,#56636f 0%,#303841 57%,#252c34 100%);box-shadow:inset 0 3px 3px #ffffff65,inset 0 -5px 9px #10182022,0 14px 25px #30384132;text-shadow:0 1px 2px #00000028}
+.wheel .bubble:nth-of-type(4n + 3){background:linear-gradient(150deg,#ebd18c 0%,#c49c48 56%,#aa8032 100%);color:#fff}
+.wheel .bubble:nth-of-type(4n + 4){background:linear-gradient(150deg,#8495a4 0%,#5b6b7c 57%,#445365 100%);color:#fff}
+.wheel .bubble:nth-of-type(4n + 5){background:linear-gradient(150deg,#fff 0%,#e6e6e6 56%,#c8cdd1 100%);color:#303841;text-shadow:none;box-shadow:inset 0 3px 3px #fff,inset 0 -5px 9px #84919a20,0 14px 25px #3038412c}
+.wheel .bubble .lbl{font-weight:450}
+.wheel .bubble .lbl strong{font-weight:850}
+@media(max-width:950px){.wheel .bubble{height:auto;min-height:112px}.wheel .bubble .lbl{font-size:clamp(14px,2vw,17px);line-height:1.25}}
+@media(max-width:520px){.wheel .bubble{min-height:120px}.wheel .bubble .lbl{font-size:14px}}
+
+/* V9.7 : retour discret vers la roue, sans modifier la navigation existante */
+.xme-return-wrap{display:flex;justify-content:center;margin:32px auto 4px;padding:0 16px}
+.xme-return-wheel{display:inline-flex;align-items:center;justify-content:center;gap:12px;max-width:100%;padding:16px 27px;border:1.5px solid #c49c48;border-radius:999px;background:#303841;color:#fff;font-weight:700;box-shadow:0 8px 20px rgba(48,56,65,.12);transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.xme-return-wheel:hover{transform:translateY(-3px);background:#3c4650;box-shadow:0 12px 24px rgba(48,56,65,.2)}
+.xme-return-wheel:focus-visible{outline:3px solid #c49c48;outline-offset:4px}
+.xme-return-wheel span{font-size:1.35em;line-height:1;color:#d9ba7c}
+@media(prefers-reduced-motion:reduce){.xme-return-wheel{transition:none}.xme-return-wheel:hover{transform:none}}
+
+/* V10.3 : huit points régulièrement espacés sur une ellipse symétrique.
+   Les positions sont les centres des bulles, non leurs coins. */
+@media (min-width:951px){
+ .wheel,.wheel:has(.b8){width:min(1370px,96vw);height:clamp(480px,calc(100svh - 265px),610px);margin:9px auto 0;position:relative}
+ .wheel::before{inset:10% 13%;border-radius:50%;border-width:1.5px;box-shadow:0 0 16px rgba(196,156,72,.06)}
+ .wheel .bubble{width:clamp(240px,20vw,315px);height:clamp(90px,8vh,106px);min-height:90px;max-height:106px;box-sizing:border-box;
+   right:auto!important;bottom:auto!important;left:var(--cx)!important;top:var(--cy)!important;
+   translate:-50% -50%!important;transform:none;transition:transform .25s ease,box-shadow .25s ease}
+ .wheel .bubble:hover,.wheel .bubble:focus-visible,.wheel .bubble.active{transform:scale(1.07);box-shadow:0 16px 30px #30384138,0 0 0 2px #c49c4830}
+ .wheel .b1{--cx:50%;--cy:10%}
+ .wheel .b2{--cx:76.2%;--cy:21.7%}
+ .wheel .b3{--cx:87%;--cy:50%}
+ .wheel .b4{--cx:76.2%;--cy:78.3%}
+ .wheel .b5{--cx:50%;--cy:90%}
+ .wheel .b6{--cx:23.8%;--cy:78.3%}
+ .wheel .b7{--cx:13%;--cy:50%}
+ .wheel .b8{--cx:23.8%;--cy:21.7%;display:flex}
+ .wheel .hub{left:50%;top:47%;width:clamp(135px,11vw,185px);height:clamp(135px,11vw,185px)}
+ .wheel .hint{position:absolute;top:68%;left:50%;transform:translateX(-50%);width:440px;max-width:40%;
+   margin:0;padding:0;text-align:center;font-size:clamp(12px,.95vw,15px);line-height:1.4;color:#58636d;z-index:2;pointer-events:none}
+}
+@media (max-width:950px){.wheel .hint{grid-column:1/-1;text-align:center;margin:0;padding:5px 8px 0;font-size:13px}}
+@media (prefers-reduced-motion:reduce){.wheel .bubble{transition:none!important}}
+
+/* Q1 : parcours contextuel uniquement, sans modifier les styles des autres questions */
+.q1-examples{margin:20px 0 26px}.q1-examples h3,.q1-offers h3{font-size:clamp(21px,2.2vw,28px);margin:0 0 9px;color:#303841}.q1-intro,.q1-bridge{color:#5f6973;line-height:1.6;margin:0 0 18px}.q1-example-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.q1-example{background:#f8f9fa;border:1px solid #e2e5e8;border-radius:18px;padding:19px;min-width:0}.q1-example strong{display:block;color:#303841;font-size:17px;margin-bottom:9px}.q1-example p{color:#5d6872;line-height:1.55;margin:0}.q1-insight{border-left:3px solid #C49C48;margin:22px 0 28px;padding:13px 19px;background:#faf8f3;border-radius:0 12px 12px 0;color:#303841;line-height:1.6}.q1-offer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.q1-offer{display:flex;flex-direction:column;gap:12px;border:1px solid #d8dce0;border-radius:19px;padding:21px;background:#fff;min-width:0}.q1-offer .q1-kind{font-size:12px;font-weight:800;letter-spacing:.045em;color:#987431;text-transform:uppercase}.q1-offer h4{font-size:18px;line-height:1.36;margin:0;color:#303841}.q1-offer p{font-size:14px;line-height:1.58;color:#59636d;margin:0}.q1-offer em{font-size:13px;color:#58616b;margin-top:auto;padding-top:10px}.q1-offer button{background:#303841;color:white;border:0;border-radius:12px;padding:11px 12px;font-weight:700;cursor:pointer}.q1-offer button:hover,.q1-offer button:focus-visible{background:#47515b;outline:2px solid #C49C48;outline-offset:2px}.q1-demo-note{font-size:13px;color:#68727b;margin:16px 0}.q1-link-message{margin:14px 0;padding:13px;border-radius:12px;background:#faf8f3;color:#303841}.q1-back{margin-top:22px}.q1-reveal{animation:enter .45s ease}@media(max-width:800px){.q1-offer-grid{grid-template-columns:1fr}}@media(max-width:590px){.q1-example-grid{grid-template-columns:1fr}.q1-example{padding:16px}}@media(prefers-reduced-motion:reduce){.q1-reveal{animation:none}}
+/* Q1 V4 : icônes officielles et illustration de croissance animée */
+.q1-hero-examples{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(220px,1fr);align-items:center;gap:16px;margin-bottom:14px}
+.q1-hero-examples .q1-intro{margin:0}
+.q1-growth{width:100%;max-width:390px;justify-self:end;overflow:hidden}
+.q1-growth svg{display:block;width:100%;height:auto}
+.q1-growbar{transform-box:fill-box;transform-origin:center bottom;animation:q1-rise .7s cubic-bezier(.2,.75,.25,1) both;animation-delay:calc(var(--n)*.14s)}
+.q1-growthline{stroke-dasharray:420;stroke-dashoffset:420;animation:q1-draw 1.15s ease-out .5s forwards}
+.q1-growtharrow{opacity:0;animation:q1-show .3s ease-out 1.55s forwards}
+@keyframes q1-rise{from{transform:scaleY(.04);opacity:.25}to{transform:scaleY(1);opacity:1}}
+@keyframes q1-draw{to{stroke-dashoffset:0}}
+@keyframes q1-show{to{opacity:1}}
+.q1-example{display:flex;gap:15px;align-items:center}
+.q1-example-icon{width:76px;height:76px;object-fit:contain;flex:0 0 76px}
+.q1-example-copy{min-width:0}
+@media(max-width:740px){.q1-hero-examples{grid-template-columns:1fr}.q1-growth{justify-self:center;width:min(100%,310px)}.q1-example-icon{width:58px;height:58px;flex-basis:58px}}
+@media(prefers-reduced-motion:reduce){.q1-growbar,.q1-growthline,.q1-growtharrow{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
+</style><style>
+.result-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0}
+.result-choice{border:1px solid #c49c48;border-radius:14px;background:#fff;color:#303841;padding:17px;text-align:left;cursor:pointer;font:inherit;min-height:68px}
+.result-choice{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;transform-origin:center;position:relative;z-index:0}
+@media (hover:hover) and (pointer:fine){.result-choice:hover{transform:scale(1.065);box-shadow:0 12px 30px rgba(48,56,65,.17);z-index:2}}
+@media (prefers-reduced-motion:reduce){.result-choice{transition:none}}
+.result-choice[aria-pressed="true"]{background:#303841;color:white;box-shadow:0 0 0 2px #c49c48}
+.result-choice:focus-visible{outline:3px solid #c49c48;outline-offset:3px}
+#tailored{margin-top:24px}
+</style><style>
+#results-title{scroll-margin-top:90px}
+.mode-static{display:block;padding:20px}
+.mode-static h4{margin:0 0 8px;color:#303841;font-size:1.08rem}
+.mode-static .mode-description{font-size:.88rem;opacity:.75;margin:0 0 12px}
+.mode-static ol{margin:0;padding-left:20px}
+.mode-static li{margin:0 0 12px;line-height:1.45}
+.mode-static li::marker{color:#C49C48;font-weight:bold}
+@media(max-width:700px){.mode-static{padding:16px}}
+</style>
+<style>
+/* V6 : les recommandations deviennent une section immédiatement visible et lisible. */
+#tailored{scroll-margin-top:100px;margin-top:30px;padding:26px;border:1px solid #e5d4af;border-radius:24px;background:linear-gradient(180deg,#fffaf0 0%,#ffffff 75%);box-shadow:0 14px 38px rgba(48,56,65,.09)}
+#tailored>h3{margin:0 0 18px;font-size:clamp(21px,2.5vw,29px);line-height:1.25;color:#303841}
+#modeCards.modes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+#modeCards .mode-static{position:relative;min-height:235px;padding:23px 21px 20px;background:#fff;border:1px solid #d8c39a;border-top:5px solid #C49C48;border-radius:17px;box-shadow:0 5px 16px rgba(48,56,65,.07);color:#303841}
+#modeCards .mode-static h4{font-size:clamp(17px,1.6vw,21px);line-height:1.3;font-weight:800;color:#303841;margin:0 0 9px}
+#modeCards .mode-static .mode-description{color:#66717c;font-size:14px;opacity:1;margin-bottom:18px}
+#modeCards .mode-static ol{margin:0;padding-left:22px}
+#modeCards .mode-static li{font-size:15px;font-weight:600;line-height:1.5;margin:0 0 13px;color:#303841}
+#modeCards .mode-static li::marker{color:#b58c42;font-weight:800}
+#modeCards .mode-static:nth-child(2){border-top-color:#303841}
+#modeCards .mode-static:nth-child(3){border-top-color:#d9ba7c}
+#tailored .next{font-size:13px;margin-top:18px}
+@media(max-width:820px){#modeCards.modes{grid-template-columns:1fr}#modeCards .mode-static{min-height:0;padding:20px}#tailored{padding:18px;scroll-margin-top:85px}}
+</style>
+<style>
+#modeCards .solution-name{display:block;font-weight:700;line-height:1.35}
+#modeCards .solution-description{display:block;margin-top:5px;font-size:13px;line-height:1.5;font-style:italic;font-weight:400;color:#64707a}
+#modeCards .mode-static li{margin-bottom:19px}
+</style><style id="xme-v8-heading-fixes">
+/* Uniforme pour les huit questions : la ponctuation reste liée au mot précédent. */
+.panel-head{align-items:flex-start;gap:20px}
+.panel-head>div{min-width:0;flex:1}
+.panel-head h2{max-width:100%;text-wrap:balance;overflow-wrap:normal;line-height:1.23}
+.panel-head .close{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap;min-width:0;padding:8px 13px;border-radius:10px;background:#C49C48;border:1px solid #C49C48;color:#303841;font-size:13px;font-weight:700;line-height:1.1;cursor:pointer;box-shadow:none}
+.panel-head .close span{font-size:17px;line-height:1}
+.panel-head .close:hover{background:#D9BA7C;border-color:#D9BA7C}
+.panel-head .close:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:640px){.panel-head{padding:22px 20px;gap:10px}.panel-head h2{font-size:clamp(20px,5.4vw,27px)}.panel-head .close{padding:7px 9px;font-size:12px}}
+</style><style id="xme-v9-q1-isolation">
+/* Uniquement la capsule Q1 : aucune modification de la roue ou des solutions. */
+.xme-q1-capsule{width:100%;min-width:0;display:flex;flex-direction:column;gap:8px}
+.xme-q1-capsule iframe{display:block;width:100%;aspect-ratio:16/9;min-height:280px;border:1px solid #d9ba7c;border-radius:18px;background:#303841;box-shadow:0 8px 24px #30384120}
+.xme-q1-note{font-size:12px;line-height:1.35;color:#68727d;text-align:center;margin:0}
+@media(max-width:700px){.xme-q1-capsule iframe{min-height:210px}}
+
+/* V9.1 : lecture Q1 grand format, isolée du reste de la V8. */
+.xme-q1-expand{align-self:flex-end;background:#C49C48;color:#303841;border:1px solid #ac853a;border-radius:10px;padding:10px 16px;font-weight:800;cursor:pointer;font-size:14px}
+.xme-q1-expand:hover{background:#D9BA7C}
+.xme-q1-modal[hidden]{display:none!important}
+.xme-q1-modal{position:fixed;inset:0;z-index:99999;background:rgba(18,24,30,.93);display:flex;align-items:center;justify-content:center;padding:12px;box-sizing:border-box}
+.xme-q1-dialog{width:min(1500px,96vw);height:min(95vh,960px);display:flex;flex-direction:column;gap:8px;min-height:0}
+.xme-q1-modalbar{display:flex;align-items:center;justify-content:space-between;color:white;font:700 16px Arial,sans-serif;gap:10px}
+.xme-q1-close{background:#C49C48;color:#303841;border:0;border-radius:9px;padding:11px 18px;font-weight:800;cursor:pointer}
+.xme-q1-screen{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.xme-q1-screen iframe{display:block;width:100%;height:100%;border:1px solid #C49C48;border-radius:15px;background:#303841}
+body.xme-q1-modal-open{overflow:hidden}
+@media(max-width:700px){.xme-q1-dialog{width:100%;height:96vh}.xme-q1-modal{padding:5px}.xme-q1-modalbar{font-size:12px}}
+
+/* V9.2 : agrandissement automatique, iframe conservée à sa place dans le DOM. */
+.xme-q1-capsule{position:relative}
+.xme-q1-capsule.xme-q1-active{position:fixed!important;inset:0!important;z-index:999999!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:40px 12px 18px!important;box-sizing:border-box!important;background:rgba(22,28,34,.94)!important;width:100vw!important;height:100dvh!important;max-width:none!important;border:0!important;border-radius:0!important}
+.xme-q1-capsule.xme-q1-active iframe{width:min(1120px,94vw)!important;height:min(760px,calc(100dvh - 90px))!important;max-height:calc(100dvh - 90px)!important;min-height:0!important;aspect-ratio:auto!important;flex:none!important;border:1px solid #C49C48!important;border-radius:16px!important;background:#303841!important;box-shadow:0 14px 50px #0008!important}
+.xme-q1-close-auto{display:none;position:fixed;top:10px;right:18px;z-index:1000000;background:#C49C48;color:#303841;border:0;border-radius:9px;padding:9px 15px;font-weight:800;cursor:pointer}
+.xme-q1-capsule.xme-q1-active .xme-q1-close-auto{display:block}
+body.xme-q1-modal-open{overflow:hidden}
+@media(max-width:700px){.xme-q1-capsule.xme-q1-active{padding:46px 4px 10px!important}.xme-q1-capsule.xme-q1-active iframe{width:98vw!important;height:min(620px,calc(100dvh - 72px))!important;max-height:calc(100dvh - 72px)!important}.xme-q1-close-auto{right:8px}}
+
+/* V9.5 : véritable bouton d'action, accessible à la souris et au clavier. */
+.xme-q1-capsule:not(.xme-q1-active) .xme-q1-play-overlay{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);
+  width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  box-sizing:border-box;padding:0 0 0 5px;background:rgba(48,56,65,.88);color:#fff;
+  border:2px solid #C49C48;box-shadow:0 8px 28px rgba(0,0,0,.25);
+  font:700 32px Arial,sans-serif;opacity:0;pointer-events:none;cursor:pointer;
+  transition:opacity .2s ease,transform .2s ease;z-index:3;
+}
+.xme-q1-capsule:not(.xme-q1-active):hover .xme-q1-play-overlay,
+.xme-q1-capsule:not(.xme-q1-active) .xme-q1-play-overlay:focus-visible{
+  opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1);
+}
+.xme-q1-capsule.xme-q1-active .xme-q1-play-overlay{display:none}
+@media(hover:none){.xme-q1-capsule:not(.xme-q1-active) .xme-q1-play-overlay{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(.9)}}
+/* V9.8 : le clic de lecture est reçu directement dans l'iframe, pour autoriser l'audio. */
+.xme-q1-play-overlay{display:flex!important;opacity:1!important;pointer-events:auto!important;transform:translate(-50%,-50%) scale(1)!important}
+</style><style id="xme-v10-2-accueil">
+/* V10.2 : uniquement la composition de l'accueil, base fonctionnelle V9.9. */
+.hero{overflow:hidden}
+.intro{padding-top:12px}
+.intro h1{font-size:clamp(36px,3.2vw,56px);margin:4px 0}
+.intro p{font-size:clamp(16px,1.15vw,21px)}
+.wheel,.wheel:has(.b8){width:min(1370px,94vw);height:clamp(480px,calc(100svh - 260px),660px);margin:10px auto 0;isolation:isolate}
+.wheel::before{content:"";position:absolute;inset:13% 13% 10%;border:2px solid rgba(196,156,72,.37);border-radius:50%;pointer-events:none;z-index:0;box-shadow:0 0 20px rgba(196,156,72,.09)}
+.wheel .hub{left:50%;top:51%;width:clamp(150px,13vw,218px);height:clamp(150px,13vw,218px);border:0;box-shadow:none;background:transparent;pointer-events:none;z-index:1}
+.wheel .hub strong,.wheel .hub span{display:none}
+.wheel .hub::before{content:"";position:absolute;inset:0;background:url('rose_des_vents_legere.svg') center / contain no-repeat;filter:drop-shadow(0 7px 10px rgba(48,56,65,.16))}
+.wheel .bubble{box-sizing:border-box;width:clamp(235px,20.5vw,315px);height:clamp(94px,8.1vw,112px);min-height:0;padding:12px 18px;border-radius:27px;border:1.5px solid rgba(217,186,124,.88);background:linear-gradient(145deg,#637381 0%,#38434e 53%,#26313b 100%);box-shadow:inset 0 2px 3px #ffffff60,inset 0 -6px 12px #141e2820,0 11px 20px #30384127;transition:transform .26s ease,box-shadow .26s ease;z-index:3;transform-origin:center}
+.wheel .bubble:nth-of-type(3n){background:linear-gradient(145deg,#e7ce90,#c49c48 57%,#aa823d)}
+.wheel .bubble .lbl{font-size:clamp(16px,1.23vw,21px);font-weight:400;line-height:1.22;text-shadow:0 1px 1px #00000012}
+.wheel .bubble .lbl strong,.wheel .bubble .lbl b{font-weight:750}
+.wheel .bubble:hover,.wheel .bubble:focus-visible{transform:scale(1.10);z-index:20;box-shadow:inset 0 2px 4px #ffffff75,0 18px 30px #30384143,0 0 0 3px #c49c4835;outline:none}
+.wheel .bubble.active{z-index:10;box-shadow:0 14px 25px #30384130,0 0 0 2px #d9ba7c}
+.wheel .b1{top:0;left:50%;right:auto;bottom:auto;translate:-50% 0}
+.wheel .b2{top:15%;right:1%;left:auto;bottom:auto}
+.wheel .b3{top:40%;right:0;left:auto;bottom:auto}
+.wheel .b4{top:auto;bottom:10%;right:4%;left:auto}
+.wheel .b5{top:auto;bottom:0;left:50%;right:auto;translate:-50% 0;display:flex}
+.wheel .b6{top:auto;bottom:10%;left:4%;right:auto}
+.wheel .b7{top:40%;left:0;right:auto;bottom:auto}
+.wheel .b8{top:15%;left:1%;right:auto;bottom:auto;translate:none;display:flex}
+.hint{font-size:clamp(13px,1vw,17px);padding:4px 12px 16px}
+@media(max-width:900px){.wheel,.wheel:has(.b8){height:600px;width:96vw}.wheel .bubble{width:clamp(190px,29vw,255px);height:100px}.wheel .bubble .lbl{font-size:clamp(14px,1.8vw,18px)}.wheel .hub{width:145px;height:145px}}
+@media(max-width:680px){.hero{overflow:visible}.wheel,.wheel:has(.b8){height:auto;width:min(520px,94vw);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:12px 0}.wheel::before{display:none}.wheel .hub{position:relative;grid-column:1/-1;grid-row:1;left:auto;top:auto;transform:none;width:125px;height:125px;margin:0 auto}.wheel .bubble{position:relative;top:auto;left:auto;right:auto;bottom:auto;translate:none;width:100%;height:auto;min-height:105px;padding:12px}.wheel .bubble .lbl{font-size:15px}.wheel .bubble:hover{transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.wheel .bubble{transition:none}}
+</style><style id="xme-v10-4-accueil">
+/* V10.4 : uniquement palette, rose des vents et légende de la roue. */
+.wheel .bubble,.wheel .bubble:nth-of-type(3n){
+  color:#26343f;
+  background:linear-gradient(145deg,#ffffff 0%,#f9fbfd 48%,#e9edf1 100%);
+  border:1.5px solid rgba(196,156,72,.78);
+  box-shadow:inset 0 3px 4px rgba(255,255,255,.96),inset 0 -4px 10px rgba(100,139,170,.09),0 10px 20px rgba(48,56,65,.16);
+  text-shadow:none;
+}
+.wheel .b2,.wheel .b6,.wheel .b8{
+  background:linear-gradient(145deg,#e0edf7 0%,#b7d0e3 58%,#93b7d1 100%);
+}
+.wheel .b3,.wheel .b7{
+  background:linear-gradient(145deg,#dfbd70 0%,#c49c48 58%,#b88d37 100%);
+  color:#fff;
+}
+.wheel .bubble .lbl{text-shadow:none}
+.wheel .b3 .lbl,.wheel .b7 .lbl{text-shadow:0 1px 2px rgba(93,61,13,.18)}
+.wheel .bubble:hover,.wheel .bubble:focus-visible{
+  transform:scale(1.07);
+  box-shadow:inset 0 2px 5px rgba(255,255,255,.7),0 15px 27px rgba(48,56,65,.2),0 0 0 2px rgba(196,156,72,.22);
+}
+.wheel .hub{top:48%;width:clamp(165px,14vw,220px);height:clamp(165px,14vw,220px)}
+.wheel .hub::before{
+  background-image:url('rose_des_vents_or.png');
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  filter:drop-shadow(0 8px 8px rgba(81,67,39,.24));
+}
+.wheel .hint{
+  position:absolute;left:50%;top:66%;bottom:auto;right:auto;
+  transform:translateX(-50%);width:330px;max-width:34%;
+  margin:0;padding:0;
+  color:#303841;font-size:clamp(14px,.98vw,17px);font-weight:750;
+  line-height:1.35;text-align:center;text-shadow:0 1px 0 rgba(255,255,255,.8);
+  z-index:2;pointer-events:none;
+}
+@media(max-width:900px) and (min-width:681px){.wheel .hint{max-width:36%;width:270px;font-size:14px}.wheel .hub{width:165px;height:165px}}
+@media(max-width:680px){
+  .wheel .hub{top:auto;width:130px;height:130px}
+  .wheel .hint{position:relative;left:auto;top:auto;transform:none;max-width:100%;width:100%;grid-column:1/-1;grid-row:2;padding:4px 12px 12px;margin:auto}
+}
+</style><style id="xme-v10-5-palette">
+/* V10.5 : couleurs de la planche de référence, dans l'ordre circulaire. */
+.wheel .bubble{color:#fff;border:1.5px solid rgba(196,156,72,.72);text-shadow:0 1px 2px rgba(0,0,0,.12)}
+/* Haut : ardoise foncée */
+.wheel .b1{background:linear-gradient(145deg,#404851 0%,#303841 75%,#2a323b 100%);color:#fff}
+/* Haut gauche et bas droit : bleu ardoise */
+.wheel .b8,.wheel .b4{background:linear-gradient(145deg,#718294 0%,#5d6d7f 65%,#526174 100%);color:#fff}
+/* Haut droit et bas gauche : doré */
+.wheel .b2,.wheel .b6{background:linear-gradient(145deg,#d4b366 0%,#c49c48 68%,#b78c38 100%);color:#fff}
+/* Milieu gauche et milieu droit : gris clair */
+.wheel .b7,.wheel .b3{background:linear-gradient(145deg,#e6e6e6 0%,#d8d8d8 75%,#cecece 100%);color:#303841;text-shadow:none}
+/* Bas : blanc */
+.wheel .b5{background:linear-gradient(145deg,#ffffff 0%,#fafafa 65%,#f0f0f0 100%);color:#303841;text-shadow:none}
+.wheel .hint .hint-gold{color:#c49c48;font-weight:800}
+</style><style id="xme-v10-6-palette-finale">
+/* Répartition demandée : 1 haut anthracite, 2 droite doré, 3 gauche ardoise,
+   4 droite gris, 5 gauche gris, 6 droite ardoise, 7 gauche doré, 8 bas blanc.
+   Les classes b1...b8 suivent l'ordre circulaire horaire :
+   b1 haut, b2 haut droite, b3 milieu droite, b4 bas droite,
+   b5 bas, b6 bas gauche, b7 milieu gauche, b8 haut gauche. */
+.wheel .b1{background:linear-gradient(150deg,#48515b 0%,#303841 68%,#29313a 100%)!important;color:#fff!important}
+.wheel .b2,.wheel .b6{background:linear-gradient(150deg,#d7b970 0%,#c49c48 65%,#b38a39 100%)!important;color:#fff!important}
+.wheel .b8,.wheel .b4{background:linear-gradient(150deg,#78889a 0%,#5d6d7f 65%,#506174 100%)!important;color:#fff!important}
+.wheel .b3,.wheel .b7{background:linear-gradient(150deg,#e4e4e4 0%,#d8d8d8 68%,#cdcdcd 100%)!important;color:#303841!important;text-shadow:none!important}
+.wheel .b5{background:linear-gradient(150deg,#fff 0%,#fbfbfb 68%,#f0f0f0 100%)!important;color:#303841!important;text-shadow:none!important}
+/* Typographie réduite d'un cran, sans changer les dimensions des bulles. */
+@media(min-width:951px){.wheel .bubble .lbl{font-size:clamp(15px,1.13vw,19px)!important;line-height:1.23}}
+@media(min-width:681px) and (max-width:950px){.wheel .bubble .lbl{font-size:clamp(13px,1.65vw,16px)!important}}
+</style><style id="xme-v10-9-mobile-maquettes">
+/* X&ME V10.9 : adaptation mobile d'après les deux maquettes validées.
+   Les règles ordinateur et le comportement vidéo V10.8 sont préservés. */
+@media (max-width:700px) {
+  html,body{max-width:100%;overflow-x:hidden}
+  .hero{min-height:0!important;overflow:visible!important}
+  .intro{padding:10px 14px 4px!important}
+  .intro h1{font-size:clamp(31px,8vw,42px)!important;line-height:1.08!important;margin:4px 0!important}
+  .intro p{font-size:clamp(12px,3.2vw,15px)!important;line-height:1.4!important}
+  .xme-header{height:65px!important;padding:7px 14px!important}
+  .xme-header-brand img{width:42px!important;height:42px!important;object-fit:contain}
+  .xme-header-brand .slogan{font-size:clamp(11px,3vw,14px)!important;white-space:normal!important}
+  .wheel,.wheel:has(.b8){width:calc(100% - 28px)!important;max-width:520px!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:auto auto 98px auto auto auto!important;gap:10px!important;height:auto!important;min-height:0!important;padding:8px 0 32px!important;margin:8px auto 0!important;align-items:stretch!important}
+  .wheel::before,.wheel::after{display:none!important}
+  .wheel .bubble,.wheel .b1,.wheel .b2,.wheel .b3,.wheel .b4,.wheel .b5,.wheel .b6,.wheel .b7,.wheel .b8{position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;left:auto!important;translate:none!important;transform:none!important;width:100%!important;height:auto!important;min-height:84px!important;max-height:none!important;margin:0!important;padding:10px 8px!important;border-radius:15px!important;display:flex!important;grid-column:auto!important;grid-row:auto!important}
+  .wheel .bubble .lbl{font-size:clamp(11px,2.85vw,14px)!important;line-height:1.23!important;overflow-wrap:break-word}
+  .wheel .b1{grid-column:1!important;grid-row:1!important}
+  .wheel .b2{grid-column:2!important;grid-row:1!important}
+  .wheel .b8{grid-column:1!important;grid-row:2!important}
+  .wheel .b3{grid-column:2!important;grid-row:2!important}
+  .wheel .hub{grid-column:1/-1!important;grid-row:3!important;position:relative!important;top:auto!important;left:auto!important;transform:none!important;translate:none!important;width:98px!important;height:98px!important;min-height:0!important;margin:0 auto!important;border:0!important;background:transparent!important;box-shadow:none!important;pointer-events:none}
+  .wheel .hub::before{content:''!important;display:block!important;position:absolute!important;inset:0!important;background:url('rose_des_vents_or.png') center/contain no-repeat!important;filter:drop-shadow(0 4px 6px #30384135)!important}
+  .wheel .hub strong,.wheel .hub span{display:none!important}
+  .wheel .hint{grid-column:1/-1!important;grid-row:4!important;position:static!important;top:auto!important;left:auto!important;transform:none!important;max-width:none!important;width:100%!important;margin:0!important;padding:0 5px 8px!important;text-align:center!important;font-size:12px!important;line-height:1.35!important;pointer-events:none}
+  .wheel .b7{grid-column:1!important;grid-row:5!important}
+  .wheel .b4{grid-column:2!important;grid-row:5!important}
+  .wheel .b6{grid-column:1!important;grid-row:6!important}
+  .wheel .b5{grid-column:2!important;grid-row:6!important}
+  .wheel .bubble:focus-visible{outline:3px solid #c49c48!important;outline-offset:2px}
+  .detail{padding:0 10px!important;margin:12px auto 45px!important;width:100%!important;max-width:550px!important}
+  .panel{border-radius:18px!important;overflow:hidden!important}
+  .panel-head{position:relative!important;display:block!important;padding:16px 72px 16px 17px!important;min-height:82px!important}
+  .panel-head>div{min-width:0!important;width:100%!important}
+  .panel-head small{display:block!important;font-size:10px!important;letter-spacing:.1em!important;line-height:1.4!important}
+  .panel-head h2{font-size:clamp(18px,4.7vw,24px)!important;line-height:1.18!important;overflow-wrap:break-word!important;margin:5px 0 0!important}
+  .panel-head .close{position:absolute!important;top:13px!important;right:10px!important;font-size:11px!important;padding:8px!important;border-radius:9px!important;background:#c49c48!important;color:#303841!important;border:0!important;white-space:nowrap!important}
+  .panel-body{padding:16px!important}
+  .story-grid{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:0!important}
+  .story-grid>.story,.story-grid>.story+div{display:contents!important}
+  .story-grid .xme-q1-capsule,.story-grid .video{order:1!important;width:100%!important;min-width:0!important;max-width:100%!important;margin:0 0 22px!important}
+  .story-grid .story>h3{order:2!important;margin:0 0 9px!important;font-size:19px!important}
+  .story-grid .story>p{order:2!important;margin:0 0 12px!important;font-size:14px!important;line-height:1.55!important}
+  .story-grid .gain{order:3!important;margin:10px 0 18px!important;width:100%!important}
+  .story-grid .constats{order:4!important;margin:0 0 12px!important;padding:16px!important}
+  .story-grid .constats h4{font-size:14px!important;line-height:1.4!important}
+  .story-grid .constats li{font-size:13px!important;line-height:1.45!important;margin-bottom:8px!important}
+  .panel-body .actions{margin:8px auto 0!important;text-align:center!important}
+  .panel-body .cta{max-width:100%!important;white-space:normal!important}
+  .solutions{max-width:100%!important;min-width:0!important}
+  .xme-q1-capsule iframe{width:100%!important;max-width:100%!important;display:block!important}
+  .xme-q1-capsule.xme-q1-active{z-index:99999!important}
+}
+@media(max-width:370px){
+ .wheel,.wheel:has(.b8){width:calc(100% - 18px)!important;gap:7px!important}
+ .wheel .bubble{min-height:90px!important;padding:8px 5px!important}
+ .wheel .bubble .lbl{font-size:11px!important}
+ .panel-head{padding-right:65px!important}
+}
+</style>
+<style id="xme-v11-0-fix-play">
+/* Contrôle de lecture visible sur les huit capsules, y compris sur mobile. */
+.xme-q1-capsule:not(.xme-q1-active) iframe{pointer-events:none!important}
+.xme-capsule-play{position:absolute;z-index:10;left:50%;top:calc((100% - 0px)/2);transform:translate(-50%,-50%);width:76px;height:76px;display:grid;place-items:center;border-radius:50%;border:2px solid #C49C48;background:rgba(48,56,65,.94);color:white;font:700 32px/1 Arial,sans-serif;box-shadow:0 8px 25px #0005;cursor:pointer;transition:transform .18s,background .18s}
+.xme-capsule-play:hover,.xme-capsule-play:focus-visible{transform:translate(-50%,-50%) scale(1.09);background:#303841;outline:2px solid #C49C48;outline-offset:3px}
+.xme-q1-capsule.xme-q1-active .xme-capsule-play{display:none!important}
+.xme-q1-capsule.xme-q1-active iframe{pointer-events:auto!important}
+@media(max-width:700px){.xme-capsule-play{width:64px;height:64px;font-size:27px}}
+</style><style id="xme-v11-1-playback">.xme-capsule-retry[hidden]{display:none!important}.xme-capsule-retry{position:fixed;z-index:100000;left:50%;bottom:clamp(20px,8vh,90px);transform:translateX(-50%);border:2px solid #C49C48;background:#303841;color:white;border-radius:30px;padding:15px 25px;font:700 16px Arial,sans-serif;cursor:pointer;box-shadow:0 10px 35px #0008;white-space:nowrap}.xme-q1-active .xme-capsule-play{display:none!important}</style><style>
+/* Q1 : constats visibles avec apparition douce et accessibilité */
+.q1-constats-details{margin-top:20px;padding:18px 20px;border:1px solid rgba(196,156,72,.35);border-radius:12px;background:rgba(196,156,72,.045)}
+.q1-constats-details h4{margin:0 0 14px;font-weight:650;color:#303841;line-height:1.5}
+.q1-constats-details ul{margin:0;padding-left:22px;line-height:1.65}
+.q1-constats-details li+li{margin-top:7px}
+@media (prefers-reduced-motion: no-preference){
+ .q1-constats-details li{animation:q1ConstatReveal .52s both;}
+ .q1-constats-details li:nth-child(1){animation-delay:.05s}
+ .q1-constats-details li:nth-child(2){animation-delay:.17s}
+ .q1-constats-details li:nth-child(3){animation-delay:.29s}
+ .q1-constats-details li:nth-child(4){animation-delay:.41s}
+ .q1-constats-details li:nth-child(5){animation-delay:.53s}
+ .q1-constats-details li:nth-child(6){animation-delay:.65s}
+ @keyframes q1ConstatReveal{from{opacity:0;filter:blur(5px);transform:translateY(7px)}to{opacity:1;filter:blur(0);transform:translateY(0)}}
+}
+
+/* Q1 V9 : trois flèches au-dessus des solutions, sans interaction obligatoire */
+.q1-arrow-intro{text-align:center;margin:28px 0 14px}
+.q1-arrow-intro h3{color:#303841;font-size:clamp(21px,2.2vw,29px);margin:0 0 10px}.q1-arrow-intro .q1-bridge{margin:0 auto 22px;max-width:850px;text-align:center}.q1-arrow-intro .q1-bridge strong{font-weight:700;color:#303841}
+.q1-offer{position:relative}
+.q1-offer-arrow{height:66px;display:flex;align-items:center;justify-content:center;margin:-8px auto 12px;pointer-events:none}
+.q1-offer-arrow svg{width:42px;height:58px;display:block;animation:q1-arrow-float 3.2s ease-in-out infinite}
+.q1-offer:nth-child(2) .q1-offer-arrow svg{animation-delay:-.55s}
+.q1-offer:nth-child(3) .q1-offer-arrow svg{animation-delay:-1.1s}
+@keyframes q1-arrow-float{0%,100%{transform:translateY(-5px)}50%{transform:translateY(6px)}}
+@media(prefers-reduced-motion:reduce){.q1-offer-arrow svg{animation:none}}
+</style><style>
+@media(prefers-reduced-motion:no-preference){
+.q1-constats-details:not(.xme-motion-ready) li{animation-play-state:paused!important}
+.q1-growth:not(.xme-motion-ready) .q1-growbar,
+.q1-growth:not(.xme-motion-ready) .q1-growthline,
+.q1-growth:not(.xme-motion-ready) .q1-growtharrow{animation-play-state:paused!important}
+.q1-example-grid.xme-motion-ready .q1-example{animation:q1ConstatReveal .52s both}
+.q1-example-grid.xme-motion-ready .q1-example:nth-child(2){animation-delay:.12s}
+.q1-example-grid.xme-motion-ready .q1-example:nth-child(3){animation-delay:.24s}
+.q1-example-grid.xme-motion-ready .q1-example:nth-child(4){animation-delay:.36s}
+}
+</style><style>
+.xme-capsule-play:disabled{opacity:.45!important;cursor:wait!important;pointer-events:none!important}
+</style><style id="xme-elegant-reveal-v19">
+/* Inspiration React Bits Animated Content : fade + légère élévation, zéro flou. */
+@media (prefers-reduced-motion: no-preference) {
+ .xme-cloud-pending {opacity:0!important;pointer-events:none}
+ .xme-cloud-visible {animation:xmeElegantIn .48s cubic-bezier(.22,1,.36,1) both}
+ @keyframes xmeElegantIn {from{opacity:0}to{opacity:1}}
+ .panel.xme-cloud-visible .panel-head{animation:xmeElegantChild .42s cubic-bezier(.22,1,.36,1) backwards}
+ .panel.xme-cloud-visible .panel-body{animation:xmeElegantChild .52s cubic-bezier(.22,1,.36,1) .09s backwards}
+ .q1-reveal.xme-cloud-visible .q1-hero-examples{animation:xmeElegantChild .46s cubic-bezier(.22,1,.36,1) both}
+ .q1-reveal.xme-cloud-visible .q1-example-grid{animation:xmeElegantChild .48s cubic-bezier(.22,1,.36,1) .09s both}
+ .q1-reveal.xme-cloud-visible .q1-offers{animation:xmeElegantChild .52s cubic-bezier(.22,1,.36,1) .18s both}
+ @keyframes xmeElegantChild {from{opacity:0;transform:translate3d(0,10px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+}
+</style><style id="xme-v21-fullscreen-fix">
+body.xme-q1-modal-open #detail,
+body.xme-q1-modal-open #detail > .panel,
+body.xme-q1-modal-open #detail .panel-body,
+body.xme-q1-modal-open #detail .story-grid,
+body.xme-q1-modal-open #detail .story {
+  transform:none!important;
+  filter:none!important;
+  contain:none!important;
+  overflow:visible!important;
+}
+</style><style id="xme-v23-icons-halo">
+/* Icônes officielles : fond transparent, halo blanc diffus sans cadre. */
+.wheel .bubble{flex-direction:row;gap:9px;align-items:center;justify-content:center;text-align:left;padding-left:11px;padding-right:12px}
+.wheel .bubble .xme-situation-icon{position:relative;display:flex;flex:0 0 57px;width:57px;height:62px;align-items:center;justify-content:center;isolation:isolate}
+.wheel .bubble .xme-situation-icon::before{content:"";position:absolute;inset:8px 2px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(255,255,255,.92) 0%,rgba(255,255,255,.68) 34%,rgba(255,255,255,.20) 61%,transparent 78%);filter:blur(7px);z-index:-1;transition:opacity .25s,transform .25s}
+.wheel .bubble .xme-situation-icon img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 2px rgba(255,255,255,.35)) drop-shadow(0 3px 4px rgba(20,27,35,.24));transition:transform .28s}
+.wheel .bubble .lbl{flex:1;min-width:0;text-align:left}
+.wheel .bubble:hover .xme-situation-icon img,.wheel .bubble:focus-visible .xme-situation-icon img{transform:scale(1.08)}
+.wheel .bubble:hover .xme-situation-icon::before,.wheel .bubble:focus-visible .xme-situation-icon::before{transform:scale(1.12)}
+@media(min-width:951px){.wheel .bubble .xme-situation-icon{flex-basis:58px;width:58px;height:66px}}
+@media(min-width:681px) and (max-width:950px){.wheel .bubble .xme-situation-icon{flex-basis:49px;width:49px;height:55px}.wheel .bubble{gap:7px;padding-left:8px;padding-right:8px}}
+@media(max-width:680px){.wheel .bubble{flex-direction:column!important;gap:2px!important;text-align:center!important;justify-content:center!important;padding:7px 6px!important}.wheel .bubble .xme-situation-icon{flex:0 0 40px;width:46px;height:40px}.wheel .bubble .lbl{text-align:center!important;flex:0 1 auto}}
+@media(max-width:370px){.wheel .bubble .xme-situation-icon{flex-basis:34px;width:38px;height:34px}}
+@media(prefers-reduced-motion:reduce){.wheel .bubble .xme-situation-icon img,.wheel .bubble .xme-situation-icon::before{transition:none}}
+</style></head><body><main><section class="hero"><header class="top xme-header"><a class="brand xme-header-brand" href="#" aria-label="Accueil X&ME"><img src="assets/fond-integre-2.png" alt="Logo X&ME"><span class="slogan">ICI... c'est vous le <em>patron !</em></span></a><button class="xme-menu-trigger" id="menuButton" aria-controls="drawer" aria-expanded="false" aria-label="Ouvrir le menu"><i></i><i></i><i></i></button></header><div class="intro"><div class="eyebrow">X&ME · Entrepreneurs, indépendants & TPE</div><h1>Ma situation</h1><p>Qu’est-ce qui vous permettrait d’y voir plus clair et d’avancer ?</p></div><div class="wheel" id="wheel"><div class="hub"><strong><b>X</b>&ME</strong><span>À VOS CÔTÉS</span></div><p class="hint">Choisissez une situation<br><span class="hint-gold">pour découvrir ce qui pourrait vous aider.</span></p></div></section><section class="detail" id="detail" hidden aria-live="polite"></section></main><div class="overlay" id="overlay"></div><aside class="drawer" id="drawer" aria-label="Navigation" aria-hidden="true"><div class="drawer-head"><strong>MENU X&ME</strong><button id="closeMenu">Fermer ✕</button></div><nav id="drawerNav"><h3>Mes situations</h3><div id="navSituations"></div><h3>Nos solutions</h3><a href="#" data-placeholder>Conseil en gestion, stratégie &amp; optimisation</a><a href="#" data-placeholder>Financement de l’entreprise</a><a href="#" data-placeholder>Formations</a><a href="#" data-placeholder>Outils</a><h3>Nos ressources</h3><a href="#" data-placeholder>Experts partenaires</a><a href="#" data-placeholder>Bibliothèque</a><h3>Informations</h3><a href="#" data-placeholder>Mentions légales</a><a href="#" data-placeholder>CGU / CGV</a><a href="#" data-placeholder>Politique de confidentialité</a></nav></aside><script>
+const situations=[{"id": 1, "label": "Je veux développer mon entreprise, mais par où commencer ?", "short": "Développer mon entreprise", "gain": "Identifier les leviers de croissance les plus prometteurs.", "narrative": ["Mon entreprise existe, mon activité fonctionne, mais je souhaite passer à une nouvelle étape.", "Je peux vouloir augmenter mon chiffre d'affaires, développer une nouvelle clientèle, élargir mon offre, conquérir un nouveau marché, ouvrir un établissement, recruter ou simplement mieux exploiter le potentiel de mon entreprise.", "Pourtant, les possibilités sont nombreuses. Je ne sais pas toujours par quoi commencer, où concentrer mes ressources ni quelles actions auront réellement le plus d'impact."], "constats": ["Mon chiffre d'affaires stagne ou progresse moins vite que prévu.", "Je souhaite accélérer mon développement, mais je manque de méthode.", "Mon activité repose sur quelques clients, produits ou canaux commerciaux.", "J'identifie de nouvelles opportunités sans savoir lesquelles privilégier.", "Mon offre a évolué et mon positionnement manque de clarté.", "Je ne connais pas suffisamment les attentes de mes clients.", "Je peine à me différencier de mes concurrents."], "results": ["Identifier les véritables leviers de croissance.", "Clarifier ma stratégie et mes priorités.", "Renforcer mon positionnement et ma proposition de valeur.", "Développer mon chiffre d'affaires.", "Construire une offre plus pertinente pour mes clients."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 2, "label": "Je veux trouver plus de clients et les fidéliser.", "short": "Trouver et fidéliser mes clients", "gain": "Obtenir davantage de clients et construire une relation durable.", "narrative": ["Je propose des produits ou des services auxquels je crois, mais trouver de nouveaux clients n'est pas toujours simple.", "Je peux manquer de prospects, avoir du mal à convaincre, constater que mes actions commerciales produisent peu de résultats ou dépendre trop fortement du bouche-à-oreille.", "Je peux aussi réussir à attirer des clients sans parvenir à les fidéliser, à développer leur satisfaction ou à générer de nouveaux achats."], "constats": ["Je ne reçois pas suffisamment de demandes commerciales.", "Je ne sais pas précisément qui sont mes meilleurs clients.", "Mon offre attire de l'intérêt, mais les ventes ne suivent pas.", "Mon argumentaire commercial manque d'impact.", "Je communique régulièrement sans obtenir les résultats attendus.", "Mon site internet génère peu de contacts.", "Je ne sais pas quels canaux d'acquisition privilégier."], "results": ["Mieux identifier et comprendre mes clients cibles.", "Construire une proposition de valeur convaincante.", "Développer une prospection régulière.", "Améliorer ma visibilité et mon référencement.", "Choisir les bons canaux commerciaux."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 3, "label": "Je travaille beaucoup, mais comment gagner davantage ?", "short": "Améliorer ma rentabilité", "gain": "Gagner davantage sans augmenter proportionnellement mon travail.", "narrative": ["Mon entreprise réalise du chiffre d'affaires, parfois même davantage qu'auparavant, mais je ne constate pas nécessairement une amélioration de mes revenus.", "Je travaille beaucoup, je multiplie les prestations ou les ventes, mais mes efforts ne se traduisent pas toujours par une rentabilité satisfaisante.", "Je peux manquer de visibilité sur mes coûts, mes marges, mes prix ou le temps réellement consacré à chaque client."], "constats": ["Mon chiffre d'affaires augmente, mais mon bénéfice stagne.", "Je ne connais pas précisément mes marges.", "Mes prix ont été fixés intuitivement ou par comparaison avec la concurrence.", "Je sous-estime certains coûts directs ou indirects.", "Mes prestations au forfait dépassent souvent le temps prévu.", "Certains clients ou produits sont peu rentables.", "Mes remises commerciales réduisent fortement mes marges."], "results": ["Comprendre la rentabilité réelle de mon activité.", "Identifier les produits, clients ou prestations les plus profitables.", "Calculer et suivre mes marges.", "Déterminer des prix économiquement cohérents.", "Réduire les coûts inutiles."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 4, "label": "Mon entreprise tourne, mais où passe ma trésorerie ?", "short": "Maîtriser ma trésorerie", "gain": "Retrouver de la visibilité et anticiper les tensions financières.", "narrative": ["Mon activité fonctionne et mon entreprise peut même afficher un résultat positif. Pourtant, mon compte bancaire professionnel ne reflète pas toujours cette performance.", "Je dois régler les fournisseurs, les salaires, les charges sociales, la fiscalité ou les remboursements d'emprunts avant d'avoir encaissé certains clients.", "Je peux connaître des périodes de tension malgré un carnet de commandes satisfaisant."], "constats": ["Mon entreprise est rentable, mais mon compte bancaire reste sous tension.", "Mes clients règlent leurs factures tardivement.", "Mes délais de paiement fournisseurs sont plus courts que mes délais clients.", "Mes stocks immobilisent une partie importante de ma trésorerie.", "Mon activité connaît une forte saisonnalité.", "Mes charges sociales et fiscales provoquent des tensions ponctuelles.", "Je n'anticipe pas suffisamment les décaissements."], "results": ["Comprendre les mouvements de trésorerie.", "Identifier les causes des tensions.", "Anticiper les encaissements et décaissements.", "Construire un plan de trésorerie.", "Calculer et améliorer mon BFR."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 5, "label": "Je veux financer un projet, quelles sont mes possibilités ?", "short": "Financer mon projet", "gain": "Identifier un financement adapté sans déséquilibrer mon activité.", "narrative": ["J'ai un projet pour mon entreprise, mais sa réalisation nécessite des ressources financières.", "Je peux vouloir acheter du matériel, financer des travaux, recruter, ouvrir un établissement, développer un nouveau produit, acquérir une entreprise ou renforcer ma trésorerie.", "Je ne connais pas toujours les dispositifs accessibles, les critères des financeurs ni la manière de présenter mon dossier."], "constats": ["Je souhaite investir sans fragiliser ma trésorerie.", "Je ne sais pas quel type de financement choisir.", "Je manque de visibilité sur ma capacité d'emprunt.", "Je ne sais pas comment présenter mon projet à une banque.", "Mon dossier financier n'est pas suffisamment structuré.", "Je souhaite financer une reprise d'entreprise.", "Je m'interroge sur une holding de reprise ou un montage LBO."], "results": ["Identifier les solutions de financement pertinentes.", "Évaluer ma capacité de financement.", "Structurer un plan de financement.", "Construire un dossier crédible.", "Préparer les arguments attendus par les financeurs."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 6, "label": "Je veux mieux m’organiser et gagner du temps.", "short": "Mieux m’organiser", "gain": "Gagner du temps et me concentrer sur ce qui crée de la valeur.", "narrative": ["Je consacre beaucoup de temps à mon activité, mais je n'ai pas toujours le sentiment d'avancer sur les sujets les plus importants.", "Je dois gérer les clients, l'administration, les opérations, les équipes, les urgences et les imprévus.", "Certaines tâches se répètent, les informations sont dispersées et mon organisation dépend parfois trop fortement de moi."], "constats": ["Je passe mes journées à gérer des urgences.", "Je manque de temps pour réfléchir à la stratégie.", "Je réalise trop de tâches répétitives.", "Je ne sais pas suffisamment hiérarchiser mes priorités.", "Mon organisation repose sur des habitudes peu formalisées.", "Certaines informations sont dispersées dans plusieurs outils.", "Je ressaisis plusieurs fois les mêmes données."], "results": ["Identifier les tâches réellement prioritaires.", "Réduire les pertes de temps.", "Simplifier mes processus.", "Organiser plus efficacement mon travail.", "Améliorer la circulation de l'information."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 7, "label": "Je dois faire évoluer mon entreprise, mais comment prendre les bonnes décisions ?", "short": "Prendre les bonnes décisions", "gain": "Choisir une direction avec davantage de visibilité et de maîtrise des risques.", "narrative": ["Mon entreprise arrive à une étape où certaines décisions peuvent modifier durablement son avenir.", "Je peux envisager un changement de modèle économique, une association, une nouvelle structure juridique, la création d'une holding, l'acquisition d'une autre entreprise, une réorganisation ou la préparation d'une transmission.", "Je peux également hésiter entre plusieurs investissements, orientations stratégiques ou modalités de développement."], "constats": ["Mon modèle économique doit évoluer.", "Je ne sais pas quelle stratégie privilégier.", "Je manque de recul sur mes décisions.", "Mes indicateurs ne permettent pas de piloter correctement l'entreprise.", "Je souhaite revoir mon organisation ou ma structure.", "J'envisage de m'associer.", "Je réfléchis à un changement de forme juridique."], "results": ["Clarifier les enjeux d'une décision.", "Disposer d'un diagnostic objectif.", "Comparer plusieurs scénarios.", "Identifier les risques et conditions de réussite.", "Évaluer les conséquences économiques et financières."], "modes": {"solo": [], "help": [], "learn": []}}, {"id": 8, "label": "Je protège mon entreprise, mais est-ce que je me protège aussi ?", "short": "Me protéger et préparer l’avenir", "gain": "Sécuriser mes revenus, ma protection et mon avenir.", "narrative": ["Je consacre beaucoup d'énergie à la réussite de mon entreprise, mais je ne prends pas toujours le temps d'examiner ma propre situation.", "Mes choix de statut, de rémunération, de protection sociale et d'investissement peuvent avoir des conséquences importantes sur mes revenus, ma famille, ma retraite et mon patrimoine.", "Je peux avoir souscrit des contrats ou adopté des dispositifs sans vérifier régulièrement s'ils correspondent encore à mes besoins."], "constats": ["Je ne sais pas si mon statut juridique est toujours adapté.", "Je souhaite revoir ma rémunération.", "J'hésite entre rémunération et dividendes.", "Je ne connais pas suffisamment mes droits sociaux.", "Je ne sais pas ce qui se passerait en cas d'arrêt de travail.", "Je m'interroge sur mes garanties en cas d'invalidité ou de décès.", "Je souhaite mieux protéger ma famille."], "results": ["Faire un état des lieux de ma situation personnelle et professionnelle.", "Comprendre les conséquences de mon statut.", "Comparer différentes modalités de rémunération.", "Évaluer ma protection sociale.", "Identifier les risques insuffisamment couverts."], "modes": {"solo": [], "help": [], "learn": []}}];let current=null,expanded=false;const wheel=document.getElementById('wheel'),detail=document.getElementById('detail');
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+const highlights={
+  1:'développer mon entreprise',
+  2:'trouver plus de clients',
+  3:'comment gagner davantage',
+  4:'où passe ma trésorerie',
+  5:'financer un projet',
+  6:'mieux m’organiser et gagner du temps',
+  7:'comment prendre les bonnes décisions',
+  8:'est-ce que je me protège aussi'
+};
+function highlightedLabel(item){
+  const text=item.label,phrase=highlights[item.id];
+  const at=text.toLocaleLowerCase('fr').indexOf(phrase.toLocaleLowerCase('fr'));
+  if(at<0)return esc(text);
+  return esc(text.slice(0,at))+'<strong>'+esc(text.slice(at,at+phrase.length))+'</strong>'+esc(text.slice(at+phrase.length));
+}
+function xmeGlide(target,offset=20,duration=1050,onArrival){
+ if(!target)return;
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const from=window.scrollY,to=Math.max(0,from+target.getBoundingClientRect().top-offset);
+ if(window.xmeGlideFrame)cancelAnimationFrame(window.xmeGlideFrame);
+ if(reduce||Math.abs(to-from)<2){window.scrollTo(0,to);onArrival?.();return;}
+ const started=performance.now();
+ const tick=now=>{
+  const t=Math.min(1,(now-started)/duration);
+  // Départ perceptible immédiatement, ralentissement continu en fin de parcours.
+  const eased=t*t*(3-2*t);
+  window.scrollTo(0,from+(to-from)*eased);
+  if(t<1)window.xmeGlideFrame=requestAnimationFrame(tick);
+  else{window.xmeGlideFrame=null;onArrival?.();}
+ };
+ window.xmeGlideFrame=requestAnimationFrame(tick);
+}
+function xmeRevealWhenVisible(root,selector){
+ const node=root?.querySelector(selector);
+ if(!node)return;
+ const show=()=>node.classList.add('xme-motion-ready');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches){show();return;}
+ const observer=new IntersectionObserver(entries=>{
+  if(entries.some(e=>e.isIntersecting&&e.intersectionRatio>=.25)){
+   observer.disconnect();show();
+  }
+ },{threshold:[.25]});
+ observer.observe(node);
+}
+function xmeCloudReveal(node){
+ if(!node)return;
+ node.classList.remove('xme-cloud-pending');
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ node.classList.add('xme-cloud-visible');
+}
+function scrollDetail(){
+ xmeGlide(detail,20,1150,()=>{
+  xmeCloudReveal(detail.querySelector('.panel'));
+  xmeRevealWhenVisible(detail,'.q1-constats-details');
+  const frame=detail.querySelector('.xme-q1-capsule iframe[data-src]');
+  if(frame){
+   frame.setAttribute('src',frame.dataset.src);
+   frame.removeAttribute('data-src');
+   // L’initialisation doit être explicite : le MutationObserver ne surveille pas les attributs src.
+   window.dispatchEvent(new CustomEvent('xme-capsule-activate',{detail:{frame}}));
+  }
+ });
+}
+for(const item of situations){const b=document.createElement('button');b.className='bubble b'+item.id;b.type='button';b.dataset.id=item.id;b.setAttribute('aria-expanded','false');b.innerHTML='<span class="xme-situation-icon" aria-hidden="true"><img src="xme-icone-q'+item.id+'.png" alt="" loading="eager"></span><span class="lbl">'+highlightedLabel(item).replace(/\s+\?/g,'&nbsp;?')+'</span>';b.addEventListener('click',()=>openSituation(item.id));wheel.appendChild(b);const a=document.createElement('a');a.href='#detail';a.textContent=item.short;a.addEventListener('click',e=>{e.preventDefault();closeDrawer();openSituation(item.id)});document.getElementById('navSituations').appendChild(a)}
+function openSituation(id){if(current===id){detail.hidden=true;current=null;expanded=false;wheel.querySelectorAll('.bubble').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-expanded','false')});return;}current=id;expanded=false;const s=situations.find(x=>x.id===id);wheel.querySelectorAll('.bubble').forEach(b=>{const active=Number(b.dataset.id)===id;b.classList.toggle('active',active);b.setAttribute('aria-expanded',String(active))});detail.hidden=false;detail.innerHTML=`<article class="panel xme-cloud-pending"><div class="panel-head"><div><small>${esc(s.short.toUpperCase())}</small><h2>${esc(s.label).replace(/\s+\?/g,"\u00a0?")}</h2></div><button class="close" id="closeDetail" type="button" aria-label="Fermer cette situation">Fermer <span aria-hidden="true">×</span></button></div><div class="panel-body"><div class="story-grid"><div class="story">${id===1?`<h3>Vous souhaitez franchir une nouvelle étape ?</h3><p>Votre entreprise fonctionne, mais vous sentez qu’elle pourrait aller plus loin. Vous avez peut-être déjà plusieurs idées de développement, sans savoir lesquelles privilégier ni comment les concrétiser.</p><section class="q1-constats-details" aria-label="Situations dans lesquelles vous pouvez vous reconnaître"><h4>Vous vous reconnaissez dans certaines de ces situations ?</h4><ul><li>Votre chiffre d’affaires stagne ou progresse moins vite que prévu.</li><li>Vous souhaitez développer votre activité, mais vous manquez de méthode ou de visibilité sur les priorités.</li><li>Votre entreprise dépend de quelques clients, offres ou marchés.</li><li>Vous identifiez plusieurs opportunités sans savoir lesquelles sont réellement pertinentes.</li><li>Votre offre ou votre positionnement ne reflète plus suffisamment les attentes de vos clients.</li><li>Vous avez du mal à identifier ce qui vous différencie de vos concurrents.</li></ul></section>`:`<h3>Cette situation vous parle ?</h3>${s.narrative.map(p=>'<p>'+esc(p)+'</p>').join('')}<div class="constats"><h4>Vous vous reconnaissez peut-être dans certains de ces constats :</h4><ul>${s.constats.map(t=>'<li>'+esc(t)+'</li>').join('')}</ul></div>`}</div><div>${`<div class="xme-q1-capsule" data-question="${id}"><button type="button" class="xme-q1-close-auto" aria-label="Fermer le grand format">✕ Fermer</button><iframe title="Animation Q${id} X&ME" data-src="xme-q${id}.html" loading="lazy" allow="autoplay" referrerpolicy="no-referrer"></iframe><button type="button" class="xme-capsule-play" disabled aria-label="Préparation de la capsule Q${id}"><span aria-hidden="true">▶</span></button></div>`}<div class="gain"><small>Un gain prioritaire possible</small><strong>${esc(s.gain)}</strong><p>À confirmer selon vos besoins et vos objectifs.</p></div></div></div><div class="actions"><button class="cta" id="discover" aria-expanded="false">Découvrir mes possibilités ↓</button></div><div class="solutions" id="solutions" hidden></div></div></article>`;document.getElementById('closeDetail').onclick=()=>openSituation(id);document.getElementById('discover').onclick=()=>showSolutions(s);scrollDetail()}
+const orientationCatalog={"1":{"results":["Clarifier mes priorités de développement","Construire un plan commercial réaliste","Choisir les investissements pertinents"],"solo":["French Canvas","French Compass"],"help":["Conseil en stratégie","Conseil en gestion"],"learn":["Gestion commerciale et stratégie","Marketing digital","Développer son réseau et ses partenariats professionnels"]},"2":{"results":["Attirer des clients adaptés à mon offre","Améliorer l'expérience et la fidélisation","Rendre ma présence commerciale plus efficace"],"solo":["French Canvas","Carte de relation client X&ME"],"help":["Conseil en stratégie commerciale"],"learn":["Gestion clients et relation client","Marketing digital","SEO, SEA et GEO","Savoir se présenter et présenter son offre"]},"3":{"results":["Comprendre mes marges et mes prix","Améliorer ma rentabilité","Négocier dans de meilleures conditions"],"solo":["French Compass"],"help":["Conseil en gestion","Conseil en optimisation"],"learn":["Gestion comptable et financière","L'art de la négociation professionnelle"]},"4":{"results":["Comprendre les décalages de trésorerie","Identifier les besoins de financement","Sécuriser mes décisions financières"],"solo":["Tableaux de bord et ressources pratiques"],"help":["Conseil en gestion de trésorerie","Financement professionnel"],"learn":["Gestion comptable et financière"]},"5":{"results":["Évaluer mes besoins et mes possibilités","Préparer un dossier de financement","Choisir un financement adapté"],"solo":["Ressources et préparation du dossier"],"help":["Financement professionnel","Conseil en gestion"],"learn":["Gestion comptable et financière"]},"6":{"results":["Retrouver du temps sur les tâches prioritaires","Structurer mon organisation","Choisir des automatisations utiles"],"solo":["Plan d'efficience X&ME"],"help":["Conseil en organisation"],"learn":["Gestion opérationnelle et organisation","Gestion de projet : méthodes agiles","Maîtriser l'intelligence artificielle"]},"7":{"results":["Comparer les scénarios possibles","Définir une direction cohérente","Mesurer les risques avant de décider"],"solo":["French Canvas","French Compass","X&ME 360"],"help":["Conseil en stratégie","Conseil en optimisation"],"learn":["Gestion commerciale et stratégie","Gestion de projet : méthodes agiles"]},"8":{"results":["Faire le point sur ma protection","Évaluer les conséquences de mes choix de rémunération","Préparer mon avenir professionnel et personnel"],"solo":["X&ME 360"],"help":["Conseil en optimisation","Experts partenaires spécialisés"],"learn":[]}};
+const solutionDescriptions={"French Canvas":"Travailler et améliorer votre modèle économique pour créer davantage de valeur.","French Compass":"Transformer vos objectifs en priorités concrètes et en actions mesurables.","French Pilot":"Structurer le pilotage de votre activité pour suivre vos décisions et vos résultats.","Carte de relation client X&ME":"Identifier les attentes de vos clients et améliorer chaque étape de leur relation avec vous.","Pricing X&ME":"Analyser vos prix et vos marges pour mieux préserver la rentabilité de votre activité.","Prévisionnel 360 X&ME":"Explorer vos hypothèses financières et anticiper leurs effets sur votre activité.","X&ME 360":"Examiner les conséquences de vos choix de statut, de rémunération et de protection.","X&ME Efficience 360":"Repérer les pertes de temps et construire un plan d’organisation plus efficace.","Bilan professionnel entrepreneurial X&ME":"Faire le point sur vos compétences, vos aspirations et vos perspectives professionnelles.","Conseil en stratégie":"Clarifier vos choix de développement et définir une trajectoire adaptée à vos objectifs.","Conseil en gestion":"Analyser vos indicateurs économiques pour éclairer vos décisions de gestion.","Conseil commercial et acquisition":"Identifier les actions commerciales pertinentes pour attirer et fidéliser vos clients.","Conseil en optimisation":"Étudier les arbitrages liés à votre organisation, votre rémunération et votre situation.","Conseil en organisation":"Réorganiser les priorités et les méthodes de travail pour gagner en efficacité.","Conseil en organisation et optimisation":"Simplifier vos processus et concentrer vos ressources sur les activités utiles.","Conseil en gestion de trésorerie":"Comprendre vos flux financiers et identifier les leviers pour sécuriser votre trésorerie.","Financement professionnel":"Étudier les solutions de financement et préparer un dossier adapté à votre projet.","Conseil au dirigeant et aide à la décision":"Prendre du recul et comparer les options avant d’engager votre entreprise.","Audit de protection du dirigeant":"Faire le point sur vos garanties et les risques auxquels vous êtes personnellement exposé.","Experts partenaires":"Accéder à une expertise spécialisée lorsque votre situation le nécessite.","Experts partenaires spécialisés":"Mobiliser des professionnels compétents sur les sujets propres à votre situation.","Gestion commerciale et stratégique":"Apprendre à construire une stratégie commerciale cohérente et à mesurer ses résultats.","Gestion commerciale et stratégie":"Apprendre à structurer votre développement commercial autour de priorités mesurables.","Gestion clients et relation client":"Améliorer la connaissance, la satisfaction et la fidélisation de vos clients.","Gestion comptable et financière":"Comprendre les chiffres de votre entreprise pour mieux piloter sa rentabilité et sa trésorerie.","Gestion opérationnelle et organisation":"Organiser vos activités et vos ressources pour travailler plus efficacement.","Savoir se présenter et présenter son offre":"Présenter clairement votre activité en tenant compte des attentes de votre interlocuteur.","Négociation professionnelle":"Préparer vos négociations et évaluer les conséquences de vos concessions.","Marketing digital : présence et acquisition":"Choisir les canaux numériques utiles pour gagner en visibilité et attirer des clients.","Marketing digital":"Développer une présence numérique cohérente avec vos objectifs commerciaux.","SEO / SEA / GEO":"Comprendre les leviers de visibilité sur les moteurs de recherche et les outils d’IA.","Gestion de projet : méthodes agiles":"Planifier et faire avancer vos projets par étapes, avec des priorités claires.","Maîtriser l’IA dans son activité professionnelle":"Identifier des usages concrets de l’IA pour vous aider dans votre travail.","Ressources et préparation du dossier":"Rassembler les informations utiles pour mieux présenter votre projet.","Tableaux de bord et ressources pratiques":"Suivre les indicateurs essentiels pour comprendre l’évolution de votre activité."};
+const outcomeSolutions={"1":[[["French Canvas","French Compass"],["Conseil en stratégie"],["Gestion commerciale et stratégique"]],[["French Compass","French Canvas"],["Conseil commercial et acquisition","Conseil en stratégie"],["Gestion commerciale et stratégique","Marketing digital : présence et acquisition"]],[["French Pilot","Prévisionnel 360 X&ME"],["Conseil en gestion","Financement professionnel"],["Gestion comptable et financière"]]],"2":[[["French Canvas","Carte de relation client X&ME"],["Conseil commercial et acquisition"],["Marketing digital : présence et acquisition","SEO / SEA / GEO"]],[["Carte de relation client X&ME"],["Conseil commercial et acquisition"],["Gestion clients et relation client"]],[["French Compass","Carte de relation client X&ME"],["Conseil commercial et acquisition"],["Savoir se présenter et présenter son offre","Marketing digital : présence et acquisition"]]],"3":[[["Pricing X&ME","Prévisionnel 360 X&ME"],["Conseil en gestion"],["Gestion comptable et financière"]],[["Pricing X&ME","X&ME Efficience 360"],["Conseil en gestion","Conseil en organisation"],["Gestion comptable et financière","Gestion opérationnelle et organisation"]],[["Pricing X&ME"],["Conseil commercial et acquisition"],["Négociation professionnelle"]]],"4":[[["Prévisionnel 360 X&ME"],["Conseil en gestion de trésorerie"],["Gestion comptable et financière"]],[["Prévisionnel 360 X&ME","French Pilot"],["Financement professionnel","Conseil en gestion"],["Gestion comptable et financière"]],[["Prévisionnel 360 X&ME"],["Conseil en gestion"],["Gestion comptable et financière"]]],"5":[[["French Pilot","Prévisionnel 360 X&ME"],["Financement professionnel"],["Gestion comptable et financière"]],[["French Pilot","Prévisionnel 360 X&ME"],["Financement professionnel"],["Gestion comptable et financière"]],[["Prévisionnel 360 X&ME","French Pilot"],["Financement professionnel","Conseil en gestion"],["Gestion comptable et financière"]]],"6":[[["X&ME Efficience 360"],["Conseil en organisation et optimisation"],["Gestion opérationnelle et organisation"]],[["X&ME Efficience 360"],["Conseil en organisation et optimisation"],["Gestion opérationnelle et organisation","Gestion de projet : méthodes agiles"]],[["X&ME Efficience 360"],["Conseil en organisation et optimisation"],["Maîtriser l’IA dans son activité professionnelle","Gestion opérationnelle et organisation"]]],"7":[[["French Compass","French Pilot"],["Conseil au dirigeant et aide à la décision"],["Gestion commerciale et stratégique"]],[["French Canvas","French Compass"],["Conseil en stratégie"],["Gestion commerciale et stratégique"]],[["French Pilot","Prévisionnel 360 X&ME"],["Conseil au dirigeant et aide à la décision","Experts partenaires"],["Gestion comptable et financière"]]],"8":[[["X&ME 360"],["Audit de protection du dirigeant","Experts partenaires"],[]],[["X&ME 360"],["Conseil en optimisation","Audit de protection du dirigeant"],[]],[["X&ME 360","Bilan professionnel entrepreneurial X&ME"],["Audit de protection du dirigeant","Experts partenaires"],[]]]};
+
+const q1ExampleIcons=['q1-icone-offre.png','q1-icone-marche.png','q1-icone-positionnement.png','q1-icone-modele.png'];
+function showQ1Solutions(){
+ expanded=!expanded;
+ const el=document.getElementById('solutions');
+ el.hidden=!expanded;
+ document.getElementById('discover').setAttribute('aria-expanded',String(expanded));
+ document.getElementById('discover').textContent=expanded?'Masquer les possibilités ↑':'Découvrir mes possibilités ↓';
+ if(!expanded)return;
+ const examples=[
+  ['Développer une nouvelle offre','Un artisan remarque que ses clients recherchent un service complémentaire qu’il ne propose pas encore.'],
+  ['Explorer un nouveau marché','Une entreprise travaillant avec des particuliers envisage de proposer son savoir-faire à des professionnels.'],
+  ['Faire évoluer son positionnement','Un prestataire constate que ses clients accordent davantage de valeur à la fiabilité qu’au prix le plus bas.'],
+  ['Repenser son modèle de développement','Une entreprise envisage de passer de prestations ponctuelles à une offre d’abonnement pour mieux répondre à des besoins récurrents.']
+ ];
+ const offers=[
+  ['En autonomie','Identifiez les opportunités de développement de votre entreprise et clarifiez les bases de votre modèle économique','Analysez les attentes de vos clients, les solutions déjà présentes sur le marché et ce qui différencie votre offre. Structurez votre réflexion pour identifier les possibilités de développement les plus pertinentes.','Outil : French Canvas','/outils/french-canvas'],
+  ['Avec un accompagnement','Définissez une stratégie de développement cohérente avec vos ambitions et les moyens de votre entreprise','Prenez du recul sur votre activité, examinez vos possibilités de croissance et construisez des orientations adaptées à votre situation avec un regard extérieur.','Prestation : Conseil en stratégie d’entreprise','/conseil/strategie'],
+  ['En vous formant','Apprenez à construire une stratégie commerciale et à piloter le développement de votre activité','Développez vos compétences pour comprendre votre marché, définir des objectifs, choisir vos leviers commerciaux et mesurer les résultats de vos actions.','Formation : Gestion commerciale et stratégique','/formations/gestion-commerciale-strategique']
+ ];
+ el.innerHTML='<div class="q1-reveal xme-cloud-pending"><section class="q1-examples" aria-labelledby="q1-examples-title"><div class="q1-hero-examples"><div><h3 id="q1-examples-title">Développer votre entreprise peut prendre plusieurs formes.</h3><p class="q1-intro">Voici quelques situations concrètes pour identifier les possibilités qui pourraient correspondre à votre activité.</p></div><div class="q1-growth" role="img" aria-label="Illustration animée de la croissance d’une entreprise, avec des barres ascendantes et une trajectoire dorée"><svg viewBox="0 0 440 235" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="q1bar" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#303841"/><stop offset="1" stop-color="#66717d"/></linearGradient><linearGradient id="q1gold" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#a77b2c"/><stop offset="1" stop-color="#e2c67e"/></linearGradient><filter id="q1shadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#303841" flood-opacity=".12"/></filter></defs><ellipse cx="226" cy="210" rx="178" ry="14" fill="#303841" opacity=".045"/><path d="M42 204H400" stroke="#d8dfe4" stroke-width="2"/><g filter="url(#q1shadow)"><g class="q1-growbar" style="--n:0"><rect x="70" y="150" width="54" height="54" rx="7" fill="url(#q1bar)"/><path d="M70 150l13-10h54l-13 10z" fill="#73808d"/><path d="M124 150l13-10v54l-13 10z" fill="#202832"/></g><g class="q1-growbar" style="--n:1"><rect x="150" y="118" width="54" height="86" rx="7" fill="url(#q1bar)"/><path d="M150 118l13-10h54l-13 10z" fill="#73808d"/><path d="M204 118l13-10v86l-13 10z" fill="#202832"/></g><g class="q1-growbar" style="--n:2"><rect x="230" y="78" width="54" height="126" rx="7" fill="url(#q1bar)"/><path d="M230 78l13-10h54l-13 10z" fill="#73808d"/><path d="M284 78l13-10v126l-13 10z" fill="#202832"/></g><g class="q1-growbar" style="--n:3"><rect x="310" y="38" width="54" height="166" rx="7" fill="url(#q1gold)"/><path d="M310 38l13-10h54l-13 10z" fill="#f2d797"/><path d="M364 38l13-10v166l-13 10z" fill="#9b712a"/></g></g><path class="q1-growthline" d="M92 137C145 127 155 102 184 99S244 70 262 58S329 25 371 18" fill="none" stroke="#C49C48" stroke-width="5" stroke-linecap="round"/><path class="q1-growtharrow" d="M355 17l17 0 -4 17" fill="none" stroke="#C49C48" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div class="q1-example-grid">'+examples.map(([t,d],i)=>'<article class="q1-example"><img class="q1-example-icon" src="'+q1ExampleIcons[i]+'" alt="" aria-hidden="true"><div class="q1-example-copy"><strong>'+esc(t)+'</strong><p>'+esc(d)+'</p></div></article>').join('')+'</div><div class="q1-insight"><strong>Quelles opportunités méritent réellement votre attention ?</strong> Toutes les pistes de développement ne présentent pas le même intérêt. Leur pertinence dépend des besoins de vos clients, de votre modèle économique, de vos ressources et de vos ambitions.</div></section><section class="q1-offers" aria-labelledby="q1-offers-title"><div class="q1-arrow-intro"><h3 id="q1-offers-title">Choisissez comment vous souhaitez avancer.</h3><p class="q1-bridge">Pour identifier les possibilités les plus adaptées à votre entreprise, <strong>plusieurs approches s’offrent à vous.</strong></p></div><div class="q1-offer-grid">'+offers.map(([mode,title,desc,means,route],i)=>'<article class="q1-offer"><div class="q1-offer-arrow" aria-hidden="true"><svg viewBox="0 0 44 58" focusable="false"><path d="M22 6 V35 M10 25 L22 39 L34 25" fill="none" stroke="'+['#303841','#C49C48','#5B6B7C'][i]+'" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="q1-kind">'+esc(mode)+'</span><h4>'+esc(title)+'</h4><p>'+esc(desc)+'</p><em>'+esc(means)+'</em><button type="button" data-q1-offer="'+i+'" aria-label="Voir la fiche '+esc(means)+'">Découvrir cette solution</button></article>').join('')+'</div><p class="q1-demo-note">Les fiches produits définitives seront reliées lors de leur intégration au site. Ce prototype ne simule pas une page commerciale inexistante.</p><div id="q1-link-message" class="q1-link-message" role="status" hidden></div></section><div class="xme-return-wrap q1-back"><button type="button" class="xme-return-wheel" id="xmeReturnWheel" aria-label="Revenir aux 8 situations"><span aria-hidden="true">↑</span> Revenir aux 8 situations</button></div></div>';
+ el.querySelectorAll('[data-q1-offer]').forEach(btn=>btn.addEventListener('click',()=>{
+  const selected=offers[Number(btn.dataset.q1Offer)];
+  const msg=el.querySelector('#q1-link-message');
+  msg.hidden=false;
+  msg.textContent='Fiche à relier lors de l’intégration Lovable : '+selected[3]+'. Destination prévue : '+selected[4];
+  msg.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+ }));
+ el.querySelector('#xmeReturnWheel').addEventListener('click',()=>{
+  const wheel=document.getElementById('wheel');const target=wheel&&wheel.closest('section');
+  if(target)xmeGlide(target,0,1500,()=>{if(current!==null)openSituation(current);});
+ });
+ requestAnimationFrame(()=>{
+  const target=el.querySelector('.q1-examples');
+  if(!target)return;
+  xmeGlide(target,24,1150,()=>{
+   xmeCloudReveal(el.querySelector('.q1-reveal'));
+   xmeRevealWhenVisible(el,'.q1-growth');
+   xmeRevealWhenVisible(el,'.q1-example-grid');
+  });
+ });
+}
+
+function showSolutions(s){
+ if(Number(s.id)===1)return showQ1Solutions();
+ expanded=!expanded;
+ const el=document.getElementById('solutions');
+ el.hidden=!expanded;
+ document.getElementById('discover').setAttribute('aria-expanded',String(expanded));
+ document.getElementById('discover').textContent=expanded?'Masquer les possibilités ↑':'Découvrir mes possibilités ↓';
+ if(!expanded)return;
+ const c=orientationCatalog[s.id];
+ const modes=[['solo','En autonomie','Outils et ressources'],['help','Je me fais accompagner','Conseil et experts'],['learn','Je me forme','Formations X&ME']];
+ el.innerHTML='<h3 id="results-title">Quel résultat souhaitez-vous obtenir ?</h3><p>Choisissez votre priorité pour découvrir les pistes les plus adaptées. Vous pourrez changer de choix à tout moment.</p>'+
+ '<div class="result-options" role="group" aria-labelledby="results-title">'+c.results.map((r,i)=>'<button type="button" class="result-choice" data-result="'+i+'" aria-pressed="false">'+esc(r)+'</button>').join('')+'</div>'+
+ '<div id="tailored" hidden aria-live="polite"><h3>Les solutions adaptées à votre priorité</h3><div class="modes" id="modeCards"></div><p class="next">Pistes indicatives à valider. Les outils et prestations non publiés ne sont pas encore accessibles depuis ce prototype.</p></div>'+
+ '<div class="xme-return-wrap"><button type="button" class="xme-return-wheel" id="xmeReturnWheel" aria-label="Revenir aux 8 situations"><span aria-hidden="true">↑</span> Revenir aux 8 situations</button></div>';
+ function choose(i){
+  el.querySelectorAll('[data-result]').forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.result)===i)));
+  const groups=outcomeSolutions[s.id][i];
+  const cards=modes.map(([key,name,desc],j)=>{
+   const items=groups[j].slice(0,3);
+   return '<section class="mode mode-static"><h4>'+esc(name)+'</h4><p class="mode-description">'+esc(desc)+'</p>'+
+     (items.length?'<ol>'+items.map(x=>'<li><span class="solution-name">'+esc(x)+'</span>'+(solutionDescriptions[x]?'<span class="solution-description">'+esc(solutionDescriptions[x])+'</span>':'')+'</li>').join('')+'</ol>':'<p>Pas de formation directement recommandée pour ce résultat.</p>')+'</section>';
+  });
+  el.querySelector('#modeCards').innerHTML=cards.join('');
+  el.querySelector('#tailored').hidden=false;
+  // Attendre la mise en page des cartes avant de défiler vers les recommandations.
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   const target=el.querySelector('#tailored');
+   if(!target)return;
+   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+   target.scrollIntoView({behavior:reduced?'auto':'smooth',block:'start'});
+  }));
+ }
+ el.querySelector('#xmeReturnWheel').addEventListener('click',()=>{
+  const wheel=document.getElementById('wheel');
+  const target=wheel&&wheel.closest('section');
+  if(!target)return;
+  xmeGlide(target,0,1500,()=>{if(current!==null)openSituation(current);});
+ });
+ el.querySelectorAll('[data-result]').forEach(btn=>btn.onclick=()=>choose(Number(btn.dataset.result)));
+ setTimeout(()=>{const target=el.querySelector('#results-title');if(target)target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});},90);
+}
+const overlay=document.getElementById('overlay'),drawer=document.getElementById('drawer'),menuButton=document.getElementById('menuButton');function openDrawer(){overlay.classList.add('open');drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');menuButton.setAttribute('aria-expanded','true');document.getElementById('closeMenu').focus()}function closeDrawer(){overlay.classList.remove('open');drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');menuButton.setAttribute('aria-expanded','false');menuButton.focus()}menuButton.onclick=openDrawer;document.getElementById('closeMenu').onclick=closeDrawer;overlay.onclick=closeDrawer;document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))closeDrawer()});document.querySelectorAll('[data-placeholder]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();alert('Cette rubrique sera reliée au site X&ME après validation du prototype.')}));
+</script>
+<script src="capsules/q1.js"></script>
+<script src="capsules/q2.js"></script>
+<script src="capsules/q3.js"></script>
+<script src="capsules/q4.js"></script>
+<script src="capsules/q5.js"></script>
+<script src="capsules/q6.js"></script>
+<script src="capsules/q7.js"></script>
+<script src="capsules/q8.js"></script>
+<script>
+/* V11.3 : un clic, lecture immédiate, fermeture automatique. */
+(function(){
+ const content=window.XME_CAPSULES;
+ let activeFrame=null;
+ const initialized=new WeakSet();
+ function initialize(frame){
+   if(initialized.has(frame))return;
+   const id=Number((frame.getAttribute('src')||'').match(/xme-q([1-8])\.html/)?.[1]);
+   if(!id||!content[id])return;
+   initialized.add(frame);
+   frame.setAttribute('allow','autoplay; fullscreen');
+   const button=frame.closest('.xme-q1-capsule')?.querySelector('.xme-capsule-play');
+   if(button){button.disabled=true;button.setAttribute('aria-label','Préparation de la capsule');}
+   // Le clic de lecture n'est disponible qu'après initialisation réelle du lecteur.
+   frame.addEventListener('load',()=>{
+     if(button){button.disabled=false;button.setAttribute('aria-label','Lire la capsule Q'+id+' en grand format');}
+   },{once:true});
+   frame.srcdoc=content[id];
+ }
+ window.addEventListener('xme-capsule-activate',e=>initialize(e.detail.frame));
+ const observer=new MutationObserver(()=>document.querySelectorAll('.xme-q1-capsule iframe').forEach(initialize));
+ observer.observe(document.body,{subtree:true,childList:true});
+ function parts(){const capsule=document.querySelector('.xme-q1-capsule');return {capsule,frame:capsule?.querySelector('iframe')};}
+ function stop(){
+   const {capsule,frame}=parts();if(!capsule)return;
+   try{frame?.contentWindow?.xmeStopPlayback?.()}catch(e){}
+   capsule.classList.remove('xme-q1-active');document.body.classList.remove('xme-q1-modal-open');activeFrame=null;
+ }
+ function start(){
+   const {capsule,frame}=parts();if(!capsule||!frame)return;
+   initialize(frame);
+   const button=capsule.querySelector('.xme-capsule-play');
+   if(button?.disabled || typeof frame.contentWindow?.xmeStartPlayback!=='function')return;
+   activeFrame=frame;
+   capsule.classList.add('xme-q1-active');document.body.classList.add('xme-q1-modal-open');
+   try{const p=frame.contentWindow?.xmeStartPlayback?.();if(p?.catch)p.catch(e=>console.warn('Lecture audio bloquée par le navigateur',e))}catch(e){console.warn(e)}
+ }
+ document.addEventListener('click',e=>{
+   if(e.target.closest('.xme-capsule-play')){e.preventDefault();start()}
+   if(e.target.closest('.xme-q1-close-auto')){e.preventDefault();stop()}
+ });
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&activeFrame){e.stopImmediatePropagation();stop()}},true);
+ window.addEventListener('message',e=>{
+   if(!activeFrame||e.source!==activeFrame.contentWindow)return;
+   if(e.data?.type==='finished'&&(e.data.source==='xme-capsule'||e.data.source==='xme-q1'))stop();
+ });
+})();
+</script>
+</body></html>
